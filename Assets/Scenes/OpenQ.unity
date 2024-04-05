@@ -214,6 +214,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1090003734}
     m_Modifications:
+    - target: {fileID: 544440874, guid: 73d0578dde8635c4db633cbe78f8af97, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 72295631480350893, guid: 73d0578dde8635c4db633cbe78f8af97, type: 3}
       propertyPath: m_Name
       value: AsterSmall6 (4)
@@ -523,6 +527,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1090003734}
     m_Modifications:
+    - target: {fileID: 1715985574, guid: 10eda568a7de7e04693212985f98844e, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6554404179560890419, guid: 10eda568a7de7e04693212985f98844e, type: 3}
       propertyPath: m_Name
       value: AsterMed3 (2)
@@ -842,6 +850,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1090003734}
     m_Modifications:
+    - target: {fileID: 1814067495, guid: 7e73d8cc1e09492498f76df02fb52fbf, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1187051454626278293, guid: 7e73d8cc1e09492498f76df02fb52fbf, type: 3}
       propertyPath: m_Name
       value: AsterSmall5 (1)
@@ -899,6 +911,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1090003734}
     m_Modifications:
+    - target: {fileID: 1732879881, guid: 04d0e694d442538469994e2367f412b4, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8266873878386540212, guid: 04d0e694d442538469994e2367f412b4, type: 3}
       propertyPath: m_Name
       value: AsterSmall4
@@ -961,6 +977,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1090003734}
     m_Modifications:
+    - target: {fileID: 1623604223, guid: 97fc4a6e44a6aed4a9f7e4f0a4e48bc3, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1829189280640820382, guid: 97fc4a6e44a6aed4a9f7e4f0a4e48bc3, type: 3}
       propertyPath: m_Name
       value: AsterSmall3
@@ -1532,6 +1552,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1090003734}
     m_Modifications:
+    - target: {fileID: 1623604223, guid: 97fc4a6e44a6aed4a9f7e4f0a4e48bc3, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1829189280640820382, guid: 97fc4a6e44a6aed4a9f7e4f0a4e48bc3, type: 3}
       propertyPath: m_Name
       value: AsterSmall3 (3)
@@ -1759,7 +1783,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 1
   m_SleepingMode: 1
@@ -2543,6 +2567,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1090003734}
     m_Modifications:
+    - target: {fileID: 544440874, guid: 73d0578dde8635c4db633cbe78f8af97, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 72295631480350893, guid: 73d0578dde8635c4db633cbe78f8af97, type: 3}
       propertyPath: m_Name
       value: AsterSmall6 (3)
@@ -3104,6 +3132,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1090003734}
     m_Modifications:
+    - target: {fileID: 128075096, guid: 0b41583a19866d64b9483e371372b152, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1273717868519207366, guid: 0b41583a19866d64b9483e371372b152, type: 3}
       propertyPath: m_Name
       value: AsterSmall1 (1)
@@ -3334,6 +3366,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1090003734}
     m_Modifications:
+    - target: {fileID: 948429315, guid: 46fd36c0039a3de4e8a017dd1652a1c9, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5413199681401816606, guid: 46fd36c0039a3de4e8a017dd1652a1c9, type: 3}
       propertyPath: m_RootOrder
       value: 45
@@ -3391,6 +3427,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1090003734}
     m_Modifications:
+    - target: {fileID: 1623604223, guid: 97fc4a6e44a6aed4a9f7e4f0a4e48bc3, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1829189280640820382, guid: 97fc4a6e44a6aed4a9f7e4f0a4e48bc3, type: 3}
       propertyPath: m_Name
       value: AsterSmall3 (1)
@@ -3448,6 +3488,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1090003734}
     m_Modifications:
+    - target: {fileID: 1196845700, guid: 5c3659959ebb30a489d7eef3009f8afc, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1989084925316332678, guid: 5c3659959ebb30a489d7eef3009f8afc, type: 3}
       propertyPath: m_RootOrder
       value: 21
@@ -3762,6 +3806,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1090003734}
     m_Modifications:
+    - target: {fileID: 1462205375, guid: a605a9cb8e6a23444baef3434392fdb5, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1947891166154513261, guid: a605a9cb8e6a23444baef3434392fdb5, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -4081,6 +4129,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1090003734}
     m_Modifications:
+    - target: {fileID: 544440874, guid: 73d0578dde8635c4db633cbe78f8af97, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 72295631480350893, guid: 73d0578dde8635c4db633cbe78f8af97, type: 3}
       propertyPath: m_Name
       value: AsterSmall6 (2)
@@ -4647,6 +4699,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1090003734}
     m_Modifications:
+    - target: {fileID: 1388711792, guid: 65ee5b4a801d6d44eb112962bd3246e2, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1082700227081861820, guid: 65ee5b4a801d6d44eb112962bd3246e2, type: 3}
       propertyPath: m_Name
       value: AsterMed5
@@ -4872,6 +4928,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1090003734}
     m_Modifications:
+    - target: {fileID: 1292956331, guid: a928b6b7e9852c6429b1e3022b0ca7ed, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4706317341639660141, guid: a928b6b7e9852c6429b1e3022b0ca7ed, type: 3}
       propertyPath: m_RootOrder
       value: 47
@@ -5606,6 +5666,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1090003734}
     m_Modifications:
+    - target: {fileID: 948429315, guid: 46fd36c0039a3de4e8a017dd1652a1c9, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5413199681401816606, guid: 46fd36c0039a3de4e8a017dd1652a1c9, type: 3}
       propertyPath: m_RootOrder
       value: 36
@@ -5663,6 +5727,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1090003734}
     m_Modifications:
+    - target: {fileID: 1814067495, guid: 7e73d8cc1e09492498f76df02fb52fbf, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1187051454626278293, guid: 7e73d8cc1e09492498f76df02fb52fbf, type: 3}
       propertyPath: m_Name
       value: AsterSmall5 (2)
@@ -5888,6 +5956,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1090003734}
     m_Modifications:
+    - target: {fileID: 544440874, guid: 73d0578dde8635c4db633cbe78f8af97, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 72295631480350893, guid: 73d0578dde8635c4db633cbe78f8af97, type: 3}
       propertyPath: m_Name
       value: AsterSmall6 (1)
@@ -6389,6 +6461,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1090003734}
     m_Modifications:
+    - target: {fileID: 1811523156, guid: a4f6c7d73f99033429f262bcba1bdeb8, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1102140773862506242, guid: a4f6c7d73f99033429f262bcba1bdeb8, type: 3}
       propertyPath: m_RootOrder
       value: 37
@@ -6950,6 +7026,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1090003734}
     m_Modifications:
+    - target: {fileID: 2006237120, guid: 0d18f1a7832f6a44fa77efb30bde703e, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 969904161304041633, guid: 0d18f1a7832f6a44fa77efb30bde703e, type: 3}
       propertyPath: m_RootOrder
       value: 48
@@ -7007,6 +7087,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1090003734}
     m_Modifications:
+    - target: {fileID: 2006237120, guid: 0d18f1a7832f6a44fa77efb30bde703e, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 969904161304041633, guid: 0d18f1a7832f6a44fa77efb30bde703e, type: 3}
       propertyPath: m_RootOrder
       value: 30
@@ -7321,6 +7405,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1090003734}
     m_Modifications:
+    - target: {fileID: 1814067495, guid: 7e73d8cc1e09492498f76df02fb52fbf, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1187051454626278293, guid: 7e73d8cc1e09492498f76df02fb52fbf, type: 3}
       propertyPath: m_Name
       value: AsterSmall5
@@ -7808,6 +7896,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1090003734}
     m_Modifications:
+    - target: {fileID: 1388711792, guid: 65ee5b4a801d6d44eb112962bd3246e2, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1082700227081861820, guid: 65ee5b4a801d6d44eb112962bd3246e2, type: 3}
       propertyPath: m_Name
       value: AsterMed5 (2)
@@ -8992,6 +9084,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1090003734}
     m_Modifications:
+    - target: {fileID: 1196845700, guid: 5c3659959ebb30a489d7eef3009f8afc, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1989084925316332678, guid: 5c3659959ebb30a489d7eef3009f8afc, type: 3}
       propertyPath: m_RootOrder
       value: 49
@@ -9331,7 +9427,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 1
   m_SleepingMode: 1
@@ -9685,6 +9781,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1090003734}
     m_Modifications:
+    - target: {fileID: 1732879881, guid: 04d0e694d442538469994e2367f412b4, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8266873878386540212, guid: 04d0e694d442538469994e2367f412b4, type: 3}
       propertyPath: m_Name
       value: AsterSmall4 (2)
@@ -9826,6 +9926,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1090003734}
     m_Modifications:
+    - target: {fileID: 1811523156, guid: a4f6c7d73f99033429f262bcba1bdeb8, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1102140773862506242, guid: a4f6c7d73f99033429f262bcba1bdeb8, type: 3}
       propertyPath: m_RootOrder
       value: 38
@@ -9972,6 +10076,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1090003734}
     m_Modifications:
+    - target: {fileID: 1623604223, guid: 97fc4a6e44a6aed4a9f7e4f0a4e48bc3, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1829189280640820382, guid: 97fc4a6e44a6aed4a9f7e4f0a4e48bc3, type: 3}
       propertyPath: m_Name
       value: AsterSmall3 (2)
@@ -10029,6 +10137,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1090003734}
     m_Modifications:
+    - target: {fileID: 1715985574, guid: 10eda568a7de7e04693212985f98844e, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6554404179560890419, guid: 10eda568a7de7e04693212985f98844e, type: 3}
       propertyPath: m_Name
       value: AsterMed3 (3)
@@ -10086,6 +10198,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1090003734}
     m_Modifications:
+    - target: {fileID: 128075096, guid: 0b41583a19866d64b9483e371372b152, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1273717868519207366, guid: 0b41583a19866d64b9483e371372b152, type: 3}
       propertyPath: m_Name
       value: AsterSmall1
@@ -10771,7 +10887,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 1
   m_SleepingMode: 1
@@ -10784,6 +10900,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1090003734}
     m_Modifications:
+    - target: {fileID: 1423449231, guid: df633265b44cbf44eae676819a0f1900, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 172733410043596393, guid: df633265b44cbf44eae676819a0f1900, type: 3}
       propertyPath: m_Name
       value: AsterSmall2
@@ -10841,6 +10961,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1090003734}
     m_Modifications:
+    - target: {fileID: 1462205375, guid: a605a9cb8e6a23444baef3434392fdb5, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1947891166154513261, guid: a605a9cb8e6a23444baef3434392fdb5, type: 3}
       propertyPath: m_RootOrder
       value: 32
@@ -10898,6 +11022,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1090003734}
     m_Modifications:
+    - target: {fileID: 1623604223, guid: 97fc4a6e44a6aed4a9f7e4f0a4e48bc3, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1829189280640820382, guid: 97fc4a6e44a6aed4a9f7e4f0a4e48bc3, type: 3}
       propertyPath: m_Name
       value: AsterSmall3 (4)
@@ -11123,6 +11251,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1090003734}
     m_Modifications:
+    - target: {fileID: 1782370320, guid: ae4d463454dcd3f4f8546cef1366ff03, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3170027746248751975, guid: ae4d463454dcd3f4f8546cef1366ff03, type: 3}
       propertyPath: m_RootOrder
       value: 44
@@ -11358,6 +11490,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1090003734}
     m_Modifications:
+    - target: {fileID: 1811523156, guid: a4f6c7d73f99033429f262bcba1bdeb8, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1102140773862506242, guid: a4f6c7d73f99033429f262bcba1bdeb8, type: 3}
       propertyPath: m_RootOrder
       value: 40
@@ -11845,6 +11981,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1090003734}
     m_Modifications:
+    - target: {fileID: 1093850515, guid: 18bb600265b4a4a4fa29f69b9f5b8404, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3955418798240587005, guid: 18bb600265b4a4a4fa29f69b9f5b8404, type: 3}
       propertyPath: m_Name
       value: AsterBig1
@@ -12075,6 +12215,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1090003734}
     m_Modifications:
+    - target: {fileID: 544440874, guid: 73d0578dde8635c4db633cbe78f8af97, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 72295631480350893, guid: 73d0578dde8635c4db633cbe78f8af97, type: 3}
       propertyPath: m_Name
       value: AsterSmall6
@@ -12241,7 +12385,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 1
   m_SleepingMode: 1
@@ -12600,6 +12744,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1090003734}
     m_Modifications:
+    - target: {fileID: 948429315, guid: 46fd36c0039a3de4e8a017dd1652a1c9, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5413199681401816606, guid: 46fd36c0039a3de4e8a017dd1652a1c9, type: 3}
       propertyPath: m_RootOrder
       value: 34
@@ -12850,7 +12998,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 1
   m_SleepingMode: 1
@@ -12863,6 +13011,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1090003734}
     m_Modifications:
+    - target: {fileID: 219246914, guid: 0cc97290e5be8a24a95be78aef2fc1a6, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 122214560388886015, guid: 0cc97290e5be8a24a95be78aef2fc1a6, type: 3}
       propertyPath: m_Name
       value: AsterBig3
@@ -13197,7 +13349,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 1
   m_SleepingMode: 1
@@ -13299,6 +13451,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1090003734}
     m_Modifications:
+    - target: {fileID: 1093850515, guid: 18bb600265b4a4a4fa29f69b9f5b8404, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3955418798240587005, guid: 18bb600265b4a4a4fa29f69b9f5b8404, type: 3}
       propertyPath: m_Name
       value: AsterBig1
@@ -13356,6 +13512,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1090003734}
     m_Modifications:
+    - target: {fileID: 1282511007, guid: 70c536de7d9d92449ae52a7ff80766e1, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2493879033538797139, guid: 70c536de7d9d92449ae52a7ff80766e1, type: 3}
       propertyPath: m_RootOrder
       value: 29
@@ -14651,6 +14811,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1090003734}
     m_Modifications:
+    - target: {fileID: 1715985574, guid: 10eda568a7de7e04693212985f98844e, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6554404179560890419, guid: 10eda568a7de7e04693212985f98844e, type: 3}
       propertyPath: m_Name
       value: AsterMed3
@@ -14708,6 +14872,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1090003734}
     m_Modifications:
+    - target: {fileID: 1715985574, guid: 10eda568a7de7e04693212985f98844e, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6554404179560890419, guid: 10eda568a7de7e04693212985f98844e, type: 3}
       propertyPath: m_Name
       value: AsterMed3 (1)
@@ -14859,6 +15027,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1090003734}
     m_Modifications:
+    - target: {fileID: 1388711792, guid: 65ee5b4a801d6d44eb112962bd3246e2, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1082700227081861820, guid: 65ee5b4a801d6d44eb112962bd3246e2, type: 3}
       propertyPath: m_Name
       value: AsterMed5 (1)
@@ -15000,6 +15172,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1090003734}
     m_Modifications:
+    - target: {fileID: 948429315, guid: 46fd36c0039a3de4e8a017dd1652a1c9, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5413199681401816606, guid: 46fd36c0039a3de4e8a017dd1652a1c9, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -15393,6 +15569,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1090003734}
     m_Modifications:
+    - target: {fileID: 1282511007, guid: 70c536de7d9d92449ae52a7ff80766e1, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2493879033538797139, guid: 70c536de7d9d92449ae52a7ff80766e1, type: 3}
       propertyPath: m_RootOrder
       value: 33
@@ -15450,6 +15630,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1090003734}
     m_Modifications:
+    - target: {fileID: 1732879881, guid: 04d0e694d442538469994e2367f412b4, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8266873878386540212, guid: 04d0e694d442538469994e2367f412b4, type: 3}
       propertyPath: m_Name
       value: AsterSmall4 (1)
@@ -15507,6 +15691,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1090003734}
     m_Modifications:
+    - target: {fileID: 1732879881, guid: 04d0e694d442538469994e2367f412b4, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8266873878386540212, guid: 04d0e694d442538469994e2367f412b4, type: 3}
       propertyPath: m_Name
       value: AsterSmall4 (3)
@@ -16068,6 +16256,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1090003734}
     m_Modifications:
+    - target: {fileID: 1292956331, guid: a928b6b7e9852c6429b1e3022b0ca7ed, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4706317341639660141, guid: a928b6b7e9852c6429b1e3022b0ca7ed, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -16728,6 +16920,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1090003734}
     m_Modifications:
+    - target: {fileID: 1282511007, guid: 70c536de7d9d92449ae52a7ff80766e1, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2493879033538797139, guid: 70c536de7d9d92449ae52a7ff80766e1, type: 3}
       propertyPath: m_RootOrder
       value: 46
@@ -16963,6 +17159,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1090003734}
     m_Modifications:
+    - target: {fileID: 1462205375, guid: a605a9cb8e6a23444baef3434392fdb5, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1947891166154513261, guid: a605a9cb8e6a23444baef3434392fdb5, type: 3}
       propertyPath: m_RootOrder
       value: 39
