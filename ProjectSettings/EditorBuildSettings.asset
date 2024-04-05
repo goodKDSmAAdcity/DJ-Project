@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/OpenQ.unity
+    guid: 587d1a28df5818d45bf8c2ecbe9e0c54
   m_configObjects: {}
