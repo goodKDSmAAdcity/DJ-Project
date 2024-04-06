@@ -22,6 +22,11 @@ public class bulletScript : MonoBehaviour
         {
             enemy.TakeDamage(damage);
         }
+        BossHP boss = collision.GetComponent<BossHP>();
+        if (boss != null)
+        {
+            boss.TakeDamage(damage);    
+        }
         GameObject impact = Instantiate(impactEffect, transform.position, transform.rotation);
         Destroy(impact, impact.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length);
         Destroy(gameObject);
