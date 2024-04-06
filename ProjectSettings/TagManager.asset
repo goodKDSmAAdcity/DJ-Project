@@ -6,7 +6,7 @@ TagManager:
   tags:
   - Asteroid
   - Commander
-  - LaserTarget
+  - BossEnd
   layers:
   - Default
   - TransparentFX

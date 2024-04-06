@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Main Menu.unity
     guid: c8d2e63ad7e5d4843b5e86c183f8c63c
   - enabled: 1
@@ -14,4 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainLobby.unity
     guid: 587d1a28df5818d45bf8c2ecbe9e0c54
+  - enabled: 1
+    path: Assets/Scenes/race 3.unity
+    guid: c557bbff4a52d1148a2465ebee1703a0
+  - enabled: 1
+    path: Assets/Scenes/race 2.unity
+    guid: a3f5525b4f4dd5143b4c5c776a46a20a
+  - enabled: 1
+    path: Assets/Scenes/Boss Fight Race.unity
+    guid: 7ebebe8601182754e9949b3966797d71
   m_configObjects: {}
