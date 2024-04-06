@@ -29,6 +29,10 @@ public class MovementPlayer1 : MonoBehaviour
         {
             Shoot();
         }
+        if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.S))
+        {
+            movement.y = 0;
+        }
     }
 
     void FixedUpdate()
@@ -39,4 +43,6 @@ public class MovementPlayer1 : MonoBehaviour
     {
         Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
     }
+
+
 }

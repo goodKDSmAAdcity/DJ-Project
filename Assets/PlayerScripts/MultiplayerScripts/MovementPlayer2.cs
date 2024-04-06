@@ -29,6 +29,9 @@ public class MovementPlayer2 : MonoBehaviour
         {
             Shoot();
         }
+        if(Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKeyUp(KeyCode.DownArrow)){
+            movement.y = 0;
+        }
     }
 
     void FixedUpdate()

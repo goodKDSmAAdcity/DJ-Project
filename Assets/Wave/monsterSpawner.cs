@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
 using TMPro;
+using System.Net.NetworkInformation;
 
 public class monsterSpawner : MonoBehaviour
 {
