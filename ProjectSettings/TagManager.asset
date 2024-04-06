@@ -7,6 +7,7 @@ TagManager:
   - Asteroid
   - Commander
   - BossEnd
+  - Commander1
   layers:
   - Default
   - TransparentFX
