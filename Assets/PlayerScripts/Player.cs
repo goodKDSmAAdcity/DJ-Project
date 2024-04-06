@@ -54,7 +54,14 @@ public class Player : MonoBehaviour
         {
             OnDestroyed.Invoke(); 
         }
-        Respawn();
+        if (ifMultiplayer)
+        {
+            Respawn();
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     void Respawn()

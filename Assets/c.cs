@@ -8,6 +8,6 @@ public class c : MonoBehaviour
 
     void Update()
     {
-        rb.AddForce(new Vector2(-10f,0) * Time.deltaTime);
+        rb.AddForce(new Vector2(-14f,0) * Time.deltaTime);
     }
 }

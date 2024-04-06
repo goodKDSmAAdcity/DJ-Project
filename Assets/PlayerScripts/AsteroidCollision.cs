@@ -1,9 +1,11 @@
 using UnityEngine;
-using UnityEngine.SceneManagement; 
+using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class AsteroidCollision : MonoBehaviour
 {
-   public float restartDelay = 0f; 
+   public float restartDelay = 0f;
+    public GameObject deathEffect;
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
@@ -15,13 +17,20 @@ public class AsteroidCollision : MonoBehaviour
 
     public void DestroyShip()
     {
+
+        GameObject death = Instantiate(deathEffect, transform.position, transform.rotation);
+        Destroy(death, death.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length);
         Destroy(gameObject);
-       Application.LoadLevel (Application.loadedLevel);
+        Invoke("ResetScene", 2f);
 
         //Invoke("RestartLevel", restartDelay);
     }
+    void ResetScene()
+    {
+        Application.LoadLevel(Application.loadedLevel);
+    }
 
-   public void RestartLevel()
+    public void RestartLevel()
    {
         // Get the current scene index
         //int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
