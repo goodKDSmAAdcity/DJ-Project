@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 230663703676377892}
   - component: {fileID: 1933686111763172549}
   - component: {fileID: -3235663032870559302}
+  - component: {fileID: 306451365274323518}
   m_Layer: 0
   m_Name: Enemy Bullet
   m_TagString: Untagged
@@ -137,3 +138,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   force: 20
+--- !u!114 &306451365274323518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230663703676377898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 168b3126e234b024aa4eb5e9e6a08f5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  impactEffect: {fileID: 2797184039243889694, guid: cffa6fa963040ef47bb58c93050ba04c, type: 3}
+  damage: 20

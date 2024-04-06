@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4683518858585403938}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0.65, z: 0}
+  m_LocalPosition: {x: 0, y: 0.863, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -42,8 +42,8 @@ GameObject:
   - component: {fileID: 1246772339476438850}
   - component: {fileID: -6229977609705125589}
   - component: {fileID: -4708837197056339149}
-  - component: {fileID: 2366615572616735528}
   - component: {fileID: -2230460948081843727}
+  - component: {fileID: -7616082345527044707}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -114,20 +114,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &2366615572616735528
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7902290335436726815}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c23e440ef0f2074696aba539c0557f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
-  deathEffect: {fileID: 5135223436016443139, guid: 6927368689b1a7945b92e448f1987e0b, type: 3}
 --- !u!114 &-2230460948081843727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,6 +128,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 230663703676377898, guid: 79e567162b0b80344ae1e45ef816d9c0, type: 3}
   bulletPos: {fileID: 5035545269962961433}
+--- !u!114 &-7616082345527044707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7902290335436726815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c23e440ef0f2074696aba539c0557f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxhealth: 100
+  currenthealth: 0
+  deathEffect: {fileID: 5135223436016443139, guid: 6927368689b1a7945b92e448f1987e0b, type: 3}
+  healthBar: {fileID: 0}
 --- !u!1 &8344253256337301468
 GameObject:
   m_ObjectHideFlags: 0

@@ -117,7 +117,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 20
   rb: {fileID: 1933686111763172549}
-  anim: {fileID: 0}
+  damage: 20
   impactEffect: {fileID: 2797184039243889694, guid: cffa6fa963040ef47bb58c93050ba04c, type: 3}
 --- !u!50 &1933686111763172549
 Rigidbody2D:

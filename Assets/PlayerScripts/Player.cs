@@ -2,26 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class Player : MonoBehaviour
 {
     public int maxhealth = 100;
     public int currenthealth;
 
     public GameObject deathEffect;
-
+    public HP healthBar;
 
     private void Start()
     {
-        
+
         currenthealth = maxhealth;
-       
+        healthBar.SetMaxHealth(maxhealth);
     }
 
     public void TakeDamage(int damage)
     {
-        currenthealth-=damage;
+        currenthealth -= damage;
+        healthBar.SetHealth(currenthealth);
         Debug.Log(currenthealth);
-        if(currenthealth <=0)
+        if (currenthealth <= 0)
         {
             Die();
         }
@@ -33,3 +34,4 @@ public class Enemy : MonoBehaviour
         Destroy(gameObject);
     }
 }
+
