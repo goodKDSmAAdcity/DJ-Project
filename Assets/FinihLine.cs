@@ -7,7 +7,7 @@ public class FinihLine : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Finish"))
         {
-            SceneManager.LoadScene("OpenQ");
+            SceneManager.LoadScene("MainLobby");
         }
         if (collision.gameObject.CompareTag("Commander"))
         {

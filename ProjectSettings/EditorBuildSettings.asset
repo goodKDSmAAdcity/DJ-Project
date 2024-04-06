@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Settings Menu.unity
     guid: 64119d54db9c1bd438db6bc72cf48cd4
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/CombatLvl2.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/Vendor.unity
@@ -23,4 +23,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Pause_Menu.unity
     guid: 0efea1962f36781439cb29a00596749a
+  - enabled: 1
+    path: Assets/Scenes/race 3.unity
+    guid: c557bbff4a52d1148a2465ebee1703a0
+  - enabled: 1
+    path: Assets/Scenes/race 2.unity
+    guid: a3f5525b4f4dd5143b4c5c776a46a20a
+  - enabled: 1
+    path: Assets/Scenes/MainLobby.unity
+    guid: 587d1a28df5818d45bf8c2ecbe9e0c54
   m_configObjects: {}
