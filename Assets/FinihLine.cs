@@ -9,5 +9,13 @@ public class FinihLine : MonoBehaviour
         {
             SceneManager.LoadScene("OpenQ");
         }
+        if (collision.gameObject.CompareTag("Commander"))
+        {
+            SceneManager.LoadScene("race 2");
+        }
+        if (collision.gameObject.CompareTag("Commander1"))
+        {
+            SceneManager.LoadScene("race 3");
+        }
     }
 }
