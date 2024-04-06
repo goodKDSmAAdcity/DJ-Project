@@ -10,10 +10,10 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Asteroid
   - Water
   - UI
-  - 
+  - Border
   - 
   - 
   - 
@@ -42,4 +42,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Asteroids
+    uniqueID: 2208016677
+    locked: 0
+  - name: ScreenBorders
+    uniqueID: 1273850537
     locked: 0
