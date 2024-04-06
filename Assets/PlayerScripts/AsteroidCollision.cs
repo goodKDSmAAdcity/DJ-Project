@@ -21,13 +21,9 @@ public class AsteroidCollision : MonoBehaviour
         GameObject death = Instantiate(deathEffect, transform.position, transform.rotation);
         Destroy(death, death.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length);
         Destroy(gameObject);
-        Invoke("ResetScene", 2f);
+        SceneManager.LoadScene("Boss Fight Race");
 
         //Invoke("RestartLevel", restartDelay);
-    }
-    void ResetScene()
-    {
-        Application.LoadLevel(Application.loadedLevel);
     }
 
     public void RestartLevel()

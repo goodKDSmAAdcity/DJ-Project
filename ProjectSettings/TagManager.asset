@@ -5,14 +5,16 @@ TagManager:
   serializedVersion: 2
   tags:
   - Currency
+  - Asteroid
+  - KillBoss
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Asteroid
   - Water
   - UI
-  - 
+  - Border
   - 
   - 
   - 
