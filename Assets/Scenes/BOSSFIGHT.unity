@@ -2608,6 +2608,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 649464220}
     - target: {fileID: 2035884937, guid: 2735be33fcec31a4198ec2280918b49d, type: 3}
+      propertyPath: IfHealthBar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2035884937, guid: 2735be33fcec31a4198ec2280918b49d, type: 3}
       propertyPath: deathEffect
       value: 
       objectReference: {fileID: 5135223436016443139, guid: 6927368689b1a7945b92e448f1987e0b, type: 3}
