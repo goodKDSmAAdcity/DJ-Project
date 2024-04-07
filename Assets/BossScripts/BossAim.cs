@@ -13,6 +13,8 @@ public class BossAim : MonoBehaviour
     public GameObject laser;
     public Transform laserpoint;
     public GameObject startLaser;
+    public AudioSource source;
+    public AudioClip clip;
     void Update()
     {
         player = GameObject.FindGameObjectWithTag("Player");
@@ -43,6 +45,10 @@ public class BossAim : MonoBehaviour
 
     void Shoot1()
     {
+         if(source !=null && clip !=null)
+        {
+            source.Play();
+        }
         Instantiate(bullet, bulletPos1.position,bulletPos1.rotation);
         Instantiate(bullet, bulletPos2.position, bulletPos2.rotation);
     }

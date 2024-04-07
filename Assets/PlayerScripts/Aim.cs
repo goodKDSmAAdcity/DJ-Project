@@ -8,6 +8,8 @@ public class Aim : MonoBehaviour
     public Transform bulletPos;
     private float timer;
     private GameObject player;
+    public AudioSource source;
+    public AudioClip clip;
     void Update()
     {
         player = GameObject.FindGameObjectWithTag("Player");
@@ -24,6 +26,10 @@ public class Aim : MonoBehaviour
 
     void Shoot()
     {
+        if(source !=null && clip !=null)
+        {
+            source.Play();
+        }
         Instantiate(bullet, bulletPos.position,bulletPos.rotation);
     }
 }
