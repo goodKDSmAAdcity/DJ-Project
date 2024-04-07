@@ -6,6 +6,7 @@ public class AsteroidCollision : MonoBehaviour
 {
    public float restartDelay = 0f;
     public GameObject deathEffect;
+    public int sceneIndex;
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
@@ -21,7 +22,7 @@ public class AsteroidCollision : MonoBehaviour
         GameObject death = Instantiate(deathEffect, transform.position, transform.rotation);
         Destroy(death, death.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length);
         Destroy(gameObject);
-        SceneManager.LoadScene("Boss Fight Race");
+        SceneManager.LoadScene(sceneIndex);
 
         //Invoke("RestartLevel", restartDelay);
     }

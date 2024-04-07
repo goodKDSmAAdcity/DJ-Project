@@ -8,6 +8,14 @@ TagManager:
   - Commander
   - BossEnd
   - Commander1
+  - KillBoss
+  - LaserTarget
+  - Currency
+  - Shop
+  - Race
+  - Battle
+  - FinalBoss
+  - FinalBossLine
   layers:
   - Default
   - TransparentFX

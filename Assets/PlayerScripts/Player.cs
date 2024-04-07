@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
+
 public class Player : MonoBehaviour
 {
     public int maxhealth = 100;
@@ -12,12 +14,14 @@ public class Player : MonoBehaviour
     public HP healthBar;
     public event Action OnDestroyed;
     public MovementPlayer1 ondeath;
+    public int sceneIndex;
     public bool ifMultiplayer;
     public GameObject prefab;
     private Vector3 initialPos;
     private Quaternion initialRot;
     public TMP_Text Score;
     private int deathCount;
+    
 
 
     private void Start()
@@ -61,6 +65,7 @@ public class Player : MonoBehaviour
         else
         {
             Destroy(gameObject);
+            SceneManager.LoadScene(sceneIndex);
         }
     }
 

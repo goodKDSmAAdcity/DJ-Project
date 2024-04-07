@@ -4,6 +4,7 @@ using System.Threading;
 using UnityEngine;
 using TMPro;
 using System.Net.NetworkInformation;
+using UnityEngine.SceneManagement;
 
 public class monsterSpawner : MonoBehaviour
 {
@@ -38,6 +39,10 @@ public class monsterSpawner : MonoBehaviour
             SpawnMonster();
             // Reset the timer
             timer = 0f;
+        }
+        if(Kills >= 30)
+        {
+            SceneManager.LoadScene("MainLobby");
         }
 
         // Update the timer
