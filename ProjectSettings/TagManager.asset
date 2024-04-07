@@ -16,6 +16,10 @@ TagManager:
   - Battle
   - FinalBoss
   - FinalBossLine
+  - Battle2
+  - Race2
+  - Finish1
+  - Finish2
   layers:
   - Default
   - TransparentFX

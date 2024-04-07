@@ -21,14 +21,18 @@ public class Player : MonoBehaviour
     private Quaternion initialRot;
     public TMP_Text Score;
     private int deathCount;
-    
+
+    public bool IfHealthBar;
 
 
     private void Start()
     {
 
         currenthealth = maxhealth;
-        healthBar.SetMaxHealth(maxhealth);
+        if (IfHealthBar)
+        {
+            healthBar.SetMaxHealth(maxhealth);
+        }
         initialPos= transform.position;
         initialRot = transform.rotation;
         deathCount= 0;
@@ -38,7 +42,10 @@ public class Player : MonoBehaviour
     {
         currenthealth -= damage;
         Debug.Log("ishit");
-        healthBar.SetHealth(currenthealth);
+        if (IfHealthBar)
+        {
+            healthBar.SetHealth(currenthealth);
+        }
         Debug.Log(currenthealth);
         if (currenthealth <= 0)
         {

@@ -7,28 +7,16 @@ public class InteractScript : MonoBehaviour
     public GameObject deathEffect;
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Finish"))
-        {
-            SceneManager.LoadScene("MainLobby");
-        }
-        if (collision.gameObject.CompareTag("Race"))
-        {
-            SceneManager.LoadScene("Race1");
-        }
-        if (collision.gameObject.CompareTag("Battle"))
-        {
+        if (collision.gameObject.CompareTag("Finish1")) {
             SceneManager.LoadScene("CombatLvl1");
         }
-        if (collision.gameObject.CompareTag("FinalBoss"))
+        if (collision.gameObject.CompareTag("Finish2"))
         {
-            SceneManager.LoadScene("BOSSFIGHT");
-        }
-        if (collision.gameObject.CompareTag("Shop")){
-            SceneManager.LoadScene("Vendor");
+            SceneManager.LoadScene("CombatLvl2");
         }
         if (collision.gameObject.CompareTag("FinalBossLine"))
         {
-            SceneManager.LoadScene("MainLobby"); 
+            SceneManager.LoadScene("ending"); 
         }
         if (collision.gameObject.CompareTag("KillBoss"))
         {

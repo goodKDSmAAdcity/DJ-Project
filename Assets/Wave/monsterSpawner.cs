@@ -17,6 +17,7 @@ public class monsterSpawner : MonoBehaviour
     public int Kills = 0;
     public TMP_Text cnt;
     private float TotalSpawned = 0;
+    public int nextScene;
 
     private int currentMonsterCount = 0; // Current number of spawned monsters
     private float timer = 0f; // Timer to track spawn intervals
@@ -42,7 +43,8 @@ public class monsterSpawner : MonoBehaviour
         }
         if(Kills >= NOfEnemies)
         {
-            SceneManager.LoadScene("MainLobby");
+
+            SceneManager.LoadScene(nextScene);
         }
 
         // Update the timer
