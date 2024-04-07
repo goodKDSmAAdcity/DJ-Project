@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BossHP : MonoBehaviour
 {
@@ -30,5 +31,6 @@ public class BossHP : MonoBehaviour
     }
     void Die()
     {
+        SceneManager.LoadScene("Boss Fight Race");
     }
 }
