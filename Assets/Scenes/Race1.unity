@@ -15431,7 +15431,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3151185647864587339, guid: 354a23f87c8a5284880c73565ce7e579, type: 3}
       propertyPath: sceneIndex
-      value: 2
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6736567281464364411, guid: 354a23f87c8a5284880c73565ce7e579, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15530,7 +15530,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   restartDelay: 0.5
   deathEffect: {fileID: 5135223436016443139, guid: 6927368689b1a7945b92e448f1987e0b, type: 3}
-  sceneIndex: 2
+  sceneIndex: 9
 --- !u!114 &9020766303774493286
 MonoBehaviour:
   m_ObjectHideFlags: 0
