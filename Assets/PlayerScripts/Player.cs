@@ -21,6 +21,8 @@ public class Player : MonoBehaviour
     private Quaternion initialRot;
     public TMP_Text Score;
     private int deathCount;
+   
+    
     
 
 
@@ -53,6 +55,7 @@ public class Player : MonoBehaviour
     }
     void Die()
     {
+        
         GameObject death = Instantiate(deathEffect, transform.position, transform.rotation);
         Destroy(death, death.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length);
         if(OnDestroyed!= null)

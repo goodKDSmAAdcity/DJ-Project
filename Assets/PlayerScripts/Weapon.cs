@@ -6,6 +6,9 @@ public class Weapon : MonoBehaviour
 {
     public Transform firePoint;
     public GameObject bulletPrefab;
+    public AudioSource source;
+    public AudioClip clip;
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Mouse0))
@@ -16,6 +19,10 @@ public class Weapon : MonoBehaviour
 
     void Shoot()
     {
+        if(source !=null && clip !=null)
+        {
+            source.Play();
+        }
         Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
     }
 }
