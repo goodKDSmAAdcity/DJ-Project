@@ -40,7 +40,7 @@ public class monsterSpawner : MonoBehaviour
             // Reset the timer
             timer = 0f;
         }
-        if(Kills >= 30)
+        if(Kills >= NOfEnemies)
         {
             SceneManager.LoadScene("MainLobby");
         }
