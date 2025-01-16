@@ -1,4 +1,3 @@
-
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,6 +7,7 @@ public class Follow : MonoBehaviour
     public float movementSpeed = 5f; // Adjust the speed of movement
     public float rotationSpeed = 360f; // Adjust the speed of rotation
     public float movementDelay = 0.1f; // Adjust the delay for movement
+    public float stopDistance = 2f; // The distance threshold for stopping movement
 
     private Vector3 targetPosition;
 
@@ -20,9 +20,15 @@ public class Follow : MonoBehaviour
     {
         // Update the target position after a delay
         StartCoroutine(UpdateTargetPosition());
-        
-        // Move towards the target position
-        transform.position = Vector3.MoveTowards(transform.position, targetPosition, movementSpeed * Time.deltaTime);
+
+        // Check the distance to the target position
+        float distanceToTarget = Vector3.Distance(transform.position, targetPosition);
+
+        // Move towards the target position only if within the stop distance
+        if (distanceToTarget > stopDistance)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, targetPosition, movementSpeed * Time.deltaTime);
+        }
 
         // Rotate towards the mouse cursor
         RotateTowardsMouseCursor();
