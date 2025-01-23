@@ -132,6 +132,10 @@ GameObject:
   - component: {fileID: -7210392830380342663}
   - component: {fileID: 3151185647864587339}
   - component: {fileID: -5084011324863289771}
+  - component: {fileID: 8431801249894378679}
+  - component: {fileID: 987660173716650555}
+  - component: {fileID: 3223358839560066638}
+  - component: {fileID: 6466832098753453463}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -209,7 +213,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9020766304288631516}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 682ec3b7cbbb8de4e82550a58d337526, type: 3}
   m_Name: 
@@ -222,7 +226,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9020766304288631516}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 96935055ea842f94182e72e400110b78, type: 3}
   m_Name: 
@@ -265,6 +269,7 @@ MonoBehaviour:
   ifMultiplayer: 0
   prefab: {fileID: 0}
   Score: {fileID: 0}
+  HP: 0
 --- !u!82 &-5084011324863289771
 AudioSource:
   m_ObjectHideFlags: 0
@@ -361,3 +366,55 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &8431801249894378679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9020766304288631516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d13ae3dda512ad408737620331275a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &987660173716650555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9020766304288631516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 540c53246f248a34aa04c92b769d2a73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3223358839560066638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9020766304288631516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7c392985b0829746bf3403a3b7452a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 9020766304288631456}
+  moveSpeed: 5
+--- !u!114 &6466832098753453463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9020766304288631516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccb70c2ebb2482542876e83e880b74ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  stopDistance: 1
