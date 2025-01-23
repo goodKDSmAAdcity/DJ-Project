@@ -15,8 +15,11 @@ public class PlayerMouseRotation : MonoBehaviour
     {
         Vector3 mousePosition = Input.mousePosition;
         mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
-        Vector2 direction = new Vector2(mousePosition.x - transform.position.x , mousePosition.y - transform.position.y);
+        Vector2 direction = new Vector2(mousePosition.x - transform.position.x, mousePosition.y - transform.position.y);
 
-        transform.up= direction;
+        // Rotate direction 90 degrees to the right
+        Vector2 rotatedDirection = new Vector2(-direction.y, direction.x);
+
+        transform.up = rotatedDirection; // Apply the rotated direction
     }
 }

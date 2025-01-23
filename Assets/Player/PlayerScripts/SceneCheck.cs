@@ -6,9 +6,9 @@ public class SceneCheck : MonoBehaviour
 {
     
     private int sceneIndex;// Start is called before the first frame update
-    private bool combatScene=false;
-    private bool raceScene=false;
-    private bool lobbyScene=false;
+    public bool combatScene=false;
+    public bool raceScene=false;
+    public bool lobbyScene=false;
     void Start()
     {
     sceneIndex= SceneManager.GetActiveScene().buildIndex;

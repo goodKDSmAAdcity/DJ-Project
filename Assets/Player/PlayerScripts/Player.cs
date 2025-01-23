@@ -21,8 +21,8 @@ public class Player : MonoBehaviour
     private Quaternion initialRot;
     public TMP_Text Score;
     private int deathCount;
-    public bool HP;
     
+    public AsteroidCollision asteroidCollision;
     
 
 
@@ -31,10 +31,7 @@ public class Player : MonoBehaviour
 
 
         currenthealth = maxhealth;
-        if (HP)
-        {
         healthBar.SetMaxHealth(maxhealth);
-        }
         initialPos= transform.position;
         initialRot = transform.rotation;
         deathCount= 0;
@@ -44,10 +41,7 @@ public class Player : MonoBehaviour
     {
         currenthealth -= damage;
         Debug.Log("ishit");
-        if (HP)
-        {
             healthBar.SetHealth(currenthealth);
-        }
         Debug.Log(currenthealth);
         if (currenthealth <= 0)
         {
@@ -57,7 +51,7 @@ public class Player : MonoBehaviour
                 Debug.Log(deathCount);
                 Score.text = deathCount.ToString();
             }
-            Die();
+            asteroidCollision.DestroyShip();
         }
     }
     void Die()

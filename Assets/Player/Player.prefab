@@ -136,6 +136,9 @@ GameObject:
   - component: {fileID: 987660173716650555}
   - component: {fileID: 3223358839560066638}
   - component: {fileID: 6466832098753453463}
+  - component: {fileID: 5938221996495189047}
+  - component: {fileID: 5794586127562646199}
+  - component: {fileID: 5673731146832164611}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -239,7 +242,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9020766304288631516}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b92476c38c74c148bf50a41af4e3cd3, type: 3}
   m_Name: 
@@ -269,7 +272,7 @@ MonoBehaviour:
   ifMultiplayer: 0
   prefab: {fileID: 0}
   Score: {fileID: 0}
-  HP: 0
+  asteroidCollision: {fileID: 5673731146832164611}
 --- !u!82 &-5084011324863289771
 AudioSource:
   m_ObjectHideFlags: 0
@@ -378,6 +381,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d13ae3dda512ad408737620331275a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  combatScene: 0
+  raceScene: 0
+  lobbyScene: 0
 --- !u!114 &987660173716650555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -390,6 +396,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 540c53246f248a34aa04c92b769d2a73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneCheck: {fileID: 8431801249894378679}
+  toggleFollow: {fileID: 5938221996495189047}
+  toggleWeapon: {fileID: -7210392830380342663}
+  toggleMovement: {fileID: 9020766304288631459}
+  toggleFollowRotation: {fileID: 9020766304288631463}
+  toggleFollowMouse: {fileID: 6466832098753453463}
+  togglePlayerMouseRotation: {fileID: 5794586127562646199}
 --- !u!114 &3223358839560066638
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -397,7 +410,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9020766304288631516}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e7c392985b0829746bf3403a3b7452a3, type: 3}
   m_Name: 
@@ -411,10 +424,57 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9020766304288631516}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ccb70c2ebb2482542876e83e880b74ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
   stopDistance: 1
+--- !u!114 &5938221996495189047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9020766304288631516}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6605fcc4a2c92c74fa5056a42632b0c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 5
+  rotationSpeed: 360
+  movementDelay: 0.1
+  stopDistance: 2
+--- !u!114 &5794586127562646199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9020766304288631516}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffaf36544b19f7045a230bcd77ec40bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5673731146832164611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9020766304288631516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cd39182ccd552844a1bf98d000a4aa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  restartDelay: 2
+  deathEffect: {fileID: 5135223436016443139, guid: 6927368689b1a7945b92e448f1987e0b, type: 3}
+  sceneIndex: 0
+  sprite: {fileID: 9020766303068859205}
+  rb: {fileID: 9020766304288631458}
+  followscript: {fileID: 5938221996495189047}
+  Weaponscript: {fileID: -7210392830380342663}
