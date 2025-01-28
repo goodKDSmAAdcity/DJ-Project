@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: c8d2e63ad7e5d4843b5e86c183f8c63c
   - enabled: 1
-    path: Assets/Scenes/beginning.unity
+    path: Assets/Scenes/IntroText.unity
     guid: 0acc100b6e2e9ec4a8984e9b22a9e708
   - enabled: 1
     path: Assets/Scenes/Race1.unity
@@ -27,12 +27,18 @@ EditorBuildSettings:
     path: Assets/Scenes/BOSSFIGHT.unity
     guid: b2339a99a19e2204d87113ac0d048ef9
   - enabled: 1
-    path: Assets/Scenes/Boss Fight Race.unity
+    path: Assets/Scenes/BossFightRace.unity
     guid: 7ebebe8601182754e9949b3966797d71
   - enabled: 1
-    path: Assets/Scenes/ending.unity
+    path: Assets/Scenes/EndText.unity
     guid: cf8fd76c60cd3474c88ea27d09e8e3c5
   - enabled: 1
+<<<<<<< Updated upstream
+=======
+    path: Assets/Scenes/DeathText.unity
+    guid: 31eeb3f1b44abd34c94b5ca1333a44ca
+  - enabled: 1
+>>>>>>> Stashed changes
     path: Assets/Scenes/Multiplayer.unity
     guid: 50dba0054f8aaa64a87843563bacb551
   m_configObjects: {}
