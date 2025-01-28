@@ -23,13 +23,12 @@ public class Player : MonoBehaviour
     private int deathCount;
     
     public AsteroidCollision asteroidCollision;
-    
+    public int nameID;
 
 
     private void Start()
     {
-
-
+        nameID=UnityEngine.Random.Range(1, 100);
         currenthealth = maxhealth;
         healthBar.SetMaxHealth(maxhealth);
         initialPos= transform.position;
@@ -53,33 +52,6 @@ public class Player : MonoBehaviour
             }
             asteroidCollision.DestroyShip();
         }
-    }
-    void Die()
-    {
-        
-        GameObject death = Instantiate(deathEffect, transform.position, transform.rotation);
-        Destroy(death, death.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length);
-        if(OnDestroyed!= null)
-        {
-            OnDestroyed.Invoke(); 
-        }
-        if (ifMultiplayer)
-        {
-            Respawn();
-        }
-        else
-        {
-            Destroy(gameObject);
-            SceneManager.LoadScene(sceneIndex);
-        }
-    }
-
-    void Respawn()
-    {
-        transform.position = initialPos;
-        transform.rotation = initialRot;
-        currenthealth = maxhealth;
-        healthBar.SetMaxHealth(maxhealth);
     }
 }
 

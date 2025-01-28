@@ -139,6 +139,7 @@ GameObject:
   - component: {fileID: 5938221996495189047}
   - component: {fileID: 5794586127562646199}
   - component: {fileID: 5673731146832164611}
+  - component: {fileID: -1430863141225186295}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -266,13 +267,14 @@ MonoBehaviour:
   maxhealth: 100
   currenthealth: 0
   deathEffect: {fileID: 5135223436016443139, guid: 6927368689b1a7945b92e448f1987e0b, type: 3}
-  healthBar: {fileID: 0}
+  healthBar: {fileID: 6973625929024943164, guid: bf663fc356a589647a97a48fb45cc6ef, type: 3}
   ondeath: {fileID: 0}
   sceneIndex: 0
   ifMultiplayer: 0
   prefab: {fileID: 0}
   Score: {fileID: 0}
   asteroidCollision: {fileID: 5673731146832164611}
+  nameID: 0
 --- !u!82 &-5084011324863289771
 AudioSource:
   m_ObjectHideFlags: 0
@@ -381,6 +383,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d13ae3dda512ad408737620331275a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneIndex: 0
   combatScene: 0
   raceScene: 0
   lobbyScene: 0
@@ -403,6 +406,8 @@ MonoBehaviour:
   toggleFollowRotation: {fileID: 9020766304288631463}
   toggleFollowMouse: {fileID: 6466832098753453463}
   togglePlayerMouseRotation: {fileID: 5794586127562646199}
+  pauseMenu: {fileID: 322148268853925900, guid: d06dfcd0b5e8d0e4ba33a8a77c1d6d77, type: 3}
+  death: {fileID: 5673731146832164611}
 --- !u!114 &3223358839560066638
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -478,3 +483,17 @@ MonoBehaviour:
   rb: {fileID: 9020766304288631458}
   followscript: {fileID: 5938221996495189047}
   Weaponscript: {fileID: -7210392830380342663}
+  health: {fileID: 6973625929024943164, guid: bf663fc356a589647a97a48fb45cc6ef, type: 3}
+  isDead: 0
+--- !u!114 &-1430863141225186295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9020766304288631516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a530ac5dd9658340a0c8d02cbe2b31b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

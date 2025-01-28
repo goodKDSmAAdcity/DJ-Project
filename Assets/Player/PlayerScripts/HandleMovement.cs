@@ -10,6 +10,8 @@ public class HandleMovement : MonoBehaviour
     public FollowRotation toggleFollowRotation;
     public FollowMouse toggleFollowMouse;
     public PlayerMouseRotation togglePlayerMouseRotation;
+    public PauseMenu1 pauseMenu;
+    public AsteroidCollision death;
     void Start()
     {
         // Call the method that will run one frame later
@@ -46,5 +48,47 @@ public class HandleMovement : MonoBehaviour
             toggleFollowMouse.enabled=false;
             togglePlayerMouseRotation.enabled=false;  
             }
+    }
+    void Update()
+    {
+        if ( pauseMenu.GameIsPaused == true || death.isDead==true)
+        {
+            toggleFollow.enabled = false ;
+            toggleWeapon.enabled = false;
+            toggleMovement.enabled = false;
+            toggleFollowRotation.enabled = false;
+            toggleFollowMouse.enabled = false;
+            togglePlayerMouseRotation.enabled = false;
+        }
+        else
+        {
+            if (sceneCheck.raceScene == true)
+            {
+                toggleFollow.enabled = false;
+                toggleWeapon.enabled = false;
+                toggleMovement.enabled = true;
+                toggleFollowRotation.enabled = false;
+                toggleFollowMouse.enabled = false;
+                togglePlayerMouseRotation.enabled = false;
+            }
+            if (sceneCheck.combatScene == true)
+            {
+                toggleFollow.enabled = false;
+                toggleWeapon.enabled = true;
+                toggleMovement.enabled = true;
+                toggleFollowRotation.enabled = true;
+                toggleFollowMouse.enabled = false;
+                togglePlayerMouseRotation.enabled = true;
+            }
+            if (sceneCheck.lobbyScene == true)
+            {
+                toggleFollow.enabled = true;
+                toggleWeapon.enabled = true;
+                toggleMovement.enabled = false;
+                toggleFollowRotation.enabled = false;
+                toggleFollowMouse.enabled = false;
+                togglePlayerMouseRotation.enabled = false;
+            }
+        }
     }
 }

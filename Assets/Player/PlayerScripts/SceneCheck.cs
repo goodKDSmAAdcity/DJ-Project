@@ -5,11 +5,11 @@ using UnityEngine.SceneManagement;
 public class SceneCheck : MonoBehaviour
 {
     
-    private int sceneIndex;// Start is called before the first frame update
+    public int sceneIndex;// Start is called before the first frame update
     public bool combatScene=false;
     public bool raceScene=false;
     public bool lobbyScene=false;
-    void Start()
+    void Update()
     {
     sceneIndex= SceneManager.GetActiveScene().buildIndex;
     if(sceneIndex==2 || sceneIndex==4)

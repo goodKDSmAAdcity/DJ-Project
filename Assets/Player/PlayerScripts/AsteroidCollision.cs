@@ -11,10 +11,15 @@ public class AsteroidCollision : MonoBehaviour
     public Rigidbody2D rb;
     public Follow followscript;
     public Weapon Weaponscript;
+    public Player health;
+
+    public bool isDead=false;
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Asteroid"))
+        if (collision.gameObject.CompareTag("Asteroid") && isDead == false)
         {
+            isDead = true;
+            health.currenthealth = 0;
             DestroyShip();
         }
     }
@@ -30,8 +35,6 @@ public class AsteroidCollision : MonoBehaviour
         // Destroy the player game object
         Destroy(sprite);
         Destroy(rb);
-        followscript.enabled = false;
-        Weaponscript.enabled = false;
         // Restart the level after a delay
         Invoke("RestartLevel", restartDelay);
     }
@@ -39,8 +42,8 @@ public class AsteroidCollision : MonoBehaviour
     public void RestartLevel()
     {
         // Get the current scene index
-
         // Reload the current scene
-        SceneManager.LoadScene(sceneIndex);
+        Destroy(gameObject);
+        SceneManager.LoadScene(9);
     }
 }
