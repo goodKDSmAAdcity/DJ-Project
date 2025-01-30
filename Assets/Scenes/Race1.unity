@@ -360,7 +360,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8396293328006329926, guid: 354a23f87c8a5284880c73565ce7e579, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 354a23f87c8a5284880c73565ce7e579, type: 3}
 --- !u!1001 &55284431
 PrefabInstance:
@@ -4991,6 +4992,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a9d6418707d20489dc19419aff12e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scene: {fileID: 953280175}
+  r1: 0
+  r2: 0
+  r3: 0
+  c1: 0
+  c2: 0
+  c3: 0
+  bossunlock: 0
 --- !u!1001 &963343619
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6132,7 +6141,7 @@ GameObject:
   - component: {fileID: 1208392659}
   m_Layer: 3
   m_Name: FinishLine
-  m_TagString: Finish1
+  m_TagString: FinishLine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6181,7 +6190,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}

@@ -20,6 +20,7 @@ TagManager:
   - Race2
   - Finish1
   - Finish2
+  - FinishLine
   layers:
   - Default
   - TransparentFX
