@@ -387,6 +387,7 @@ MonoBehaviour:
   combatScene: 0
   raceScene: 0
   lobbyScene: 0
+  Player: {fileID: 9020766304288631516}
 --- !u!114 &987660173716650555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -408,6 +409,7 @@ MonoBehaviour:
   togglePlayerMouseRotation: {fileID: 5794586127562646199}
   pauseMenu: {fileID: 322148268853925900, guid: d06dfcd0b5e8d0e4ba33a8a77c1d6d77, type: 3}
   death: {fileID: 5673731146832164611}
+  Player: {fileID: 9020766304288631516}
 --- !u!114 &3223358839560066638
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -483,7 +485,7 @@ MonoBehaviour:
   rb: {fileID: 9020766304288631458}
   followscript: {fileID: 5938221996495189047}
   Weaponscript: {fileID: -7210392830380342663}
-  health: {fileID: 6973625929024943164, guid: bf663fc356a589647a97a48fb45cc6ef, type: 3}
+  health: {fileID: 3151185647864587339}
   isDead: 0
 --- !u!114 &-1430863141225186295
 MonoBehaviour:

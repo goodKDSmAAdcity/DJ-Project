@@ -12,8 +12,10 @@ public class HandleMovement : MonoBehaviour
     public PlayerMouseRotation togglePlayerMouseRotation;
     public PauseMenu1 pauseMenu;
     public AsteroidCollision death;
+    public GameObject Player;
     void Start()
     {
+        Player.transform.rotation = Quaternion.Euler(0, 0, 0);
         // Call the method that will run one frame later
         StartCoroutine(RunOneFrameAfterStart());
     }
@@ -25,10 +27,11 @@ public class HandleMovement : MonoBehaviour
 
         // This code runs one frame after Start
         if(sceneCheck.raceScene==true){
+            Player.transform.rotation = Quaternion.Euler(0, 0, 0);
             toggleFollow.enabled=false;
             toggleWeapon.enabled=false;
             toggleMovement.enabled=true;
-            toggleFollowRotation.enabled=false;
+            toggleFollowRotation.enabled = false;
             toggleFollowMouse.enabled=false;
             togglePlayerMouseRotation.enabled=false;
         }   
@@ -64,6 +67,7 @@ public class HandleMovement : MonoBehaviour
         {
             if (sceneCheck.raceScene == true)
             {
+                Player.transform.rotation = Quaternion.Euler(0, 0, 0);
                 toggleFollow.enabled = false;
                 toggleWeapon.enabled = false;
                 toggleMovement.enabled = true;

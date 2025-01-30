@@ -37,6 +37,6 @@ public class BossHP : MonoBehaviour
     }
     void Die()
     {
-        SceneManager.LoadScene("Boss Fight Race");
+        SceneManager.LoadScene(7);
     }
 }
