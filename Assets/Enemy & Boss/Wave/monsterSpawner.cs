@@ -18,6 +18,7 @@ public class monsterSpawner : MonoBehaviour
     public TMP_Text cnt;
     private float TotalSpawned = 0;
     public int nextScene;
+    public HandleScore score;
 
     private int currentMonsterCount = 0; // Current number of spawned monsters
     private float timer = 0f; // Timer to track spawn intervals
@@ -64,7 +65,7 @@ public class monsterSpawner : MonoBehaviour
         currentMonsterCount++;
         TotalSpawned++;
         // Attach a callback to the monster's OnDestroy event to decrease the count when it's destroyed
-        newMonster.GetComponent<Enemy>().OnDestroyed += () => { currentMonsterCount--; Kills++; };
+        newMonster.GetComponent<Enemy>().OnDestroyed += () => { currentMonsterCount--; Kills++; score.score+=(int)(100*Random.RandomRange(0.6f,1.4f)); };
     }
 
 }

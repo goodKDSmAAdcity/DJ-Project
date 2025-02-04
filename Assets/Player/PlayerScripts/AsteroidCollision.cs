@@ -4,7 +4,7 @@ using System.Collections;
 
 public class AsteroidCollision : MonoBehaviour
 {
-    public float restartDelay = 2f; // Delay before restarting the level
+    public float restartDelay = 1f; // Delay before restarting the level
     public GameObject deathEffect;
     public int sceneIndex; // Optional: Set this if you want to load a specific scene
     public GameObject sprite;

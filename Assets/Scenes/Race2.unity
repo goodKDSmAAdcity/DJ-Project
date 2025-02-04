@@ -18812,6 +18812,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   followscript: {fileID: 0}
   Weaponscript: {fileID: 0}
+  health: {fileID: 0}
   isDead: 0
 --- !u!114 &1488871819
 MonoBehaviour:
@@ -27165,6 +27166,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -2056877286612470699, guid: 354a23f87c8a5284880c73565ce7e579, type: 3}
+      propertyPath: sc
+      value: 
+      objectReference: {fileID: 720261457}
     - target: {fileID: 3151185647864587339, guid: 354a23f87c8a5284880c73565ce7e579, type: 3}
       propertyPath: sceneIndex
       value: 9

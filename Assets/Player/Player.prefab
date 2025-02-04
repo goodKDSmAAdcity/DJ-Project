@@ -134,13 +134,13 @@ GameObject:
   - component: {fileID: -5084011324863289771}
   - component: {fileID: 8431801249894378679}
   - component: {fileID: 987660173716650555}
-  - component: {fileID: 3223358839560066638}
   - component: {fileID: 6466832098753453463}
   - component: {fileID: 5938221996495189047}
   - component: {fileID: 5794586127562646199}
   - component: {fileID: 5673731146832164611}
   - component: {fileID: -1430863141225186295}
   - component: {fileID: 8396293328006329926}
+  - component: {fileID: -2056877286612470699}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -411,20 +411,6 @@ MonoBehaviour:
   pauseMenu: {fileID: 322148268853925900, guid: d06dfcd0b5e8d0e4ba33a8a77c1d6d77, type: 3}
   death: {fileID: 5673731146832164611}
   Player: {fileID: 9020766304288631516}
---- !u!114 &3223358839560066638
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9020766304288631516}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7c392985b0829746bf3403a3b7452a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 9020766304288631456}
-  moveSpeed: 5
 --- !u!114 &6466832098753453463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -520,3 +506,19 @@ MonoBehaviour:
   c2: 0
   c3: 0
   bossunlock: 0
+--- !u!114 &-2056877286612470699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9020766304288631516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cd9c70c780a44042a7c70a9357bd2ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scene: {fileID: 8431801249894378679}
+  score: 0
+  kills: {fileID: 0}
+  sc: {fileID: 3126893870606576489, guid: c1c3cac2b2c58b84b8c3dd906fae269b, type: 3}
