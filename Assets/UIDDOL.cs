@@ -2,16 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PauseMenuDDOL : MonoBehaviour
+public class UIDDOL : MonoBehaviour
 {
-    private static PauseMenuDDOL instance;
+    private static UIDDOL instance;
 
     void Awake()
     {
         if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(gameObject); 
+            DontDestroyOnLoad(gameObject);
         }
         else
         {

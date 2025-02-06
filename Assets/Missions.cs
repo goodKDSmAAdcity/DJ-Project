@@ -14,18 +14,19 @@ public class Missions : MonoBehaviour
     public bool c2 = false;
     public bool c3 = false;
     public bool bossunlock= false;
+    public c mission;
 
-
-    void OnTriggerEnter2D(Collider2D collision)
+    void Update()
     {
-        if (collision.CompareTag("FinishLine"))
+        sceneIndex= scene.sceneIndex;
+        if (mission.MissionComplete)
         {
-            if(sceneIndex==1) 
+            if (sceneIndex == 1)
             {
                 r1 = true;
                 SceneManager.LoadScene(11); // 11 lobby
             }
-            if(sceneIndex==2)
+            if (sceneIndex == 2)
             {
                 r2 = true;
                 SceneManager.LoadScene(11);
@@ -40,13 +41,5 @@ public class Missions : MonoBehaviour
                 SceneManager.LoadScene(8); // 8 ending
             }
         }
-    }
-    void Start()
-    {
-        
-    }
-    void Update()
-    {
-        sceneIndex= scene.sceneIndex;
     }
 }

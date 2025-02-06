@@ -13,7 +13,6 @@ public class Player : MonoBehaviour
     public GameObject deathEffect;
     public HP healthBar;
     public event Action OnDestroyed;
-    public MovementPlayer1 ondeath;
     public int sceneIndex;
     public bool ifMultiplayer;
     public GameObject prefab;

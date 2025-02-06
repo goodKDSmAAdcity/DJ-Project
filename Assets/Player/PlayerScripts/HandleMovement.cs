@@ -33,7 +33,7 @@ public class HandleMovement : MonoBehaviour
             toggleMovement.enabled=true;
             toggleFollowRotation.enabled = false;
             toggleFollowMouse.enabled=false;
-            togglePlayerMouseRotation.enabled=false;
+            togglePlayerMouseRotation.enabled = false;
         }   
                 if(sceneCheck.combatScene==true){
             toggleFollow.enabled=false;
@@ -50,10 +50,13 @@ public class HandleMovement : MonoBehaviour
             toggleFollowRotation.enabled=false;
             toggleFollowMouse.enabled=false;
             togglePlayerMouseRotation.enabled=false;  
+            sceneCheck.raceScene= false;
+            sceneCheck.combatScene= false;
             }
     }
     void Update()
     {
+       
         if ( pauseMenu.GameIsPaused == true || death.isDead==true)
         {
             toggleFollow.enabled = false ;
@@ -68,6 +71,8 @@ public class HandleMovement : MonoBehaviour
             if (sceneCheck.raceScene == true)
             {
                 Player.transform.rotation = Quaternion.Euler(0, 0, 0);
+                sceneCheck.combatScene = false;
+                sceneCheck.lobbyScene = false;
                 toggleFollow.enabled = false;
                 toggleWeapon.enabled = false;
                 toggleMovement.enabled = true;
@@ -77,6 +82,8 @@ public class HandleMovement : MonoBehaviour
             }
             if (sceneCheck.combatScene == true)
             {
+                sceneCheck.raceScene = false;
+                sceneCheck.lobbyScene = false;
                 toggleFollow.enabled = false;
                 toggleWeapon.enabled = true;
                 toggleMovement.enabled = true;
@@ -86,6 +93,8 @@ public class HandleMovement : MonoBehaviour
             }
             if (sceneCheck.lobbyScene == true)
             {
+                sceneCheck.raceScene = false;
+                sceneCheck.combatScene = false;
                 toggleFollow.enabled = true;
                 toggleWeapon.enabled = true;
                 toggleMovement.enabled = false;
