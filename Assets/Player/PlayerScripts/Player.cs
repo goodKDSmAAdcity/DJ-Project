@@ -14,21 +14,18 @@ public class Player : MonoBehaviour
     public HP healthBar;
     public event Action OnDestroyed;
     public int sceneIndex;
-    public bool ifMultiplayer;
     public GameObject prefab;
     private Vector3 initialPos;
     private Quaternion initialRot;
     public TMP_Text Score;
-    private int deathCount;
-    private bool isDead;
+    private int deathCount; 
+    public bool isDead;
     
     public AsteroidCollision asteroidCollision;
-    public int nameID;
 
 
     private void Start()
     {
-        nameID=UnityEngine.Random.Range(1, 100);
         currenthealth = maxhealth;
         healthBar.SetMaxHealth(maxhealth);
         initialPos= transform.position;
@@ -45,14 +42,23 @@ public class Player : MonoBehaviour
         Debug.Log(currenthealth);
         if (currenthealth <= 0 && isDead == false)
         {
-            if(ifMultiplayer == true)
+            if (SceneManager.GetActiveScene().buildIndex == 10)
             {
-                deathCount+=1;
+                GameObject death = Instantiate(deathEffect, transform.position, transform.rotation);
+                Destroy(death, 1f);
+                deathCount += 1;
                 Debug.Log(deathCount);
                 Score.text = deathCount.ToString();
+                currenthealth = 100;
+                healthBar.SetHealth(currenthealth);
+                transform.position = new Vector3(initialPos.x, 0,0);
+                
             }
-            isDead= true;
-            asteroidCollision.DestroyShip();
+            else
+            {
+                isDead = true;
+                asteroidCollision.DestroyShip();
+            }
         }
     }
 }

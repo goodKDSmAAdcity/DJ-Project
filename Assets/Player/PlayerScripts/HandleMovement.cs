@@ -15,7 +15,10 @@ public class HandleMovement : MonoBehaviour
     public GameObject Player;
     void Start()
     {
-        Player.transform.rotation = Quaternion.Euler(0, 0, 0);
+        if (sceneCheck.multiplayer == false)
+        {
+            Player.transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
         // Call the method that will run one frame later
         StartCoroutine(RunOneFrameAfterStart());
     }
@@ -53,6 +56,15 @@ public class HandleMovement : MonoBehaviour
             sceneCheck.raceScene= false;
             sceneCheck.combatScene= false;
             }
+        if (sceneCheck.multiplayer == true)
+        {
+            toggleFollow.enabled = false;
+            toggleWeapon.enabled = true;
+            toggleMovement.enabled = true;
+            toggleFollowRotation.enabled = false;
+            toggleFollowMouse.enabled = false;
+            togglePlayerMouseRotation.enabled = false;
+        }
     }
     void Update()
     {

@@ -15,7 +15,7 @@ public class IntroText : MonoBehaviour
     private IEnumerator RunOneFrameAfterStart()
     {
         yield return null;
-        text.text = "Will Pilot " + player.nameID + " become a new hero?";
+        text.text = "Will Pilot "  + " become a new hero?";
     }
 
     // Update is called once per frame

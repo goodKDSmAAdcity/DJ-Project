@@ -14,8 +14,11 @@ public class Missions : MonoBehaviour
     public bool c2 = false;
     public bool c3 = false;
     public bool bossunlock= false;
-    public c mission;
-
+    public FinishLine mission;
+    private void Awake()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
     void Update()
     {
         sceneIndex= scene.sceneIndex;
@@ -41,5 +44,16 @@ public class Missions : MonoBehaviour
                 SceneManager.LoadScene(8); // 8 ending
             }
         }
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        Debug.Log("Scene Loaded: " + scene.name);
+        Find();
+    }
+
+    private void Find()
+    {
+        mission = FindObjectOfType<FinishLine>();
     }
 }

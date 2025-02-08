@@ -10,6 +10,7 @@ public class HandleScore : MonoBehaviour
     public TMP_Text sc;
     private float timer = 0f;
     private float interval = 1f;
+    public Player player;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +21,7 @@ public class HandleScore : MonoBehaviour
     void Update()
     {
         sc.text= "Score: " + score.ToString();
-        if(scene.raceScene) 
+        if(scene.raceScene==true) 
         {
             timer += Time.deltaTime;
             if(timer >=interval)
@@ -28,6 +29,10 @@ public class HandleScore : MonoBehaviour
                 score +=(int)Random.Range(4f, 17f);
                 timer = 0f;
             }
+        }
+        if (player.isDead == true)
+        {
+            score = 0;
         }
     }
 }

@@ -12,6 +12,7 @@ public class AsteroidCollision : MonoBehaviour
     public Follow followscript;
     public Weapon Weaponscript;
     public Player health;
+    public HP HealthBar;
 
     public bool isDead=false;
     public void OnCollisionEnter2D(Collision2D collision)
@@ -19,7 +20,8 @@ public class AsteroidCollision : MonoBehaviour
         if (collision.gameObject.CompareTag("Asteroid") && isDead == false)
         {
             isDead = true;
-            health.currenthealth = 0;
+            health.currenthealth= 0;
+            HealthBar.SetHealth(0);
             DestroyShip();
         }
     }
@@ -30,7 +32,7 @@ public class AsteroidCollision : MonoBehaviour
         GameObject death = Instantiate(deathEffect, transform.position, transform.rotation);
 
         // Destroy the death effect after its animation finishes
-        Destroy(death, 2f); // Adjust time if the animation length is different
+        Destroy(death, 1f); // Adjust time if the animation length is different
 
         // Destroy the player game object
         Destroy(sprite);

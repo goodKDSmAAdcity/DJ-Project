@@ -8,14 +8,6 @@ public class c : MonoBehaviour
     public bool MissionComplete=false;
     void Update()
     {
-        rb.AddForce(new Vector2(-14f,0) * Time.deltaTime);
-    }
-    void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player")) // Detect if the player enters
-        {
-            Debug.Log("Player reached Finish Line");
-            MissionComplete= true;
-        }
+        rb.AddForce(new Vector2(-20f,0) * Time.deltaTime);
     }
 }

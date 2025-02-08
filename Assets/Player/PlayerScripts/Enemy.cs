@@ -32,6 +32,7 @@ public class Enemy : MonoBehaviour
         GameObject death = Instantiate(deathEffect, transform.position, transform.rotation);
         Destroy(death, death.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length);
         Destroy(gameObject);
-        
+        OnDestroyed();
+
     }
 }
