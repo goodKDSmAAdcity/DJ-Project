@@ -30,7 +30,7 @@ public class HandleScore : MonoBehaviour
                 timer = 0f;
             }
         }
-        if (player.isDead == true)
+        if (scene.sceneIndex==1)
         {
             score = 0;
         }

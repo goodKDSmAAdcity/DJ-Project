@@ -52,6 +52,7 @@ MonoBehaviour:
   combatScene: 0
   raceScene: 0
   lobbyScene: 0
+  multiplayer: 0
   Player: {fileID: 0}
 --- !u!114 &2881442550552587796
 MonoBehaviour:
@@ -91,6 +92,7 @@ MonoBehaviour:
   c3: 0
   bossunlock: 0
   mission: {fileID: 0}
+  canvas: {fileID: 2881442551248055827}
 --- !u!114 &2881442550552587880
 MonoBehaviour:
   m_ObjectHideFlags: 0
