@@ -13,6 +13,8 @@ public class AsteroidCollision : MonoBehaviour
     public Weapon Weaponscript;
     public Player health;
     public HP HealthBar;
+    public AudioSource source;
+    public AudioClip clip;
 
     public bool isDead=false;
     public void OnCollisionEnter2D(Collision2D collision)
@@ -30,7 +32,7 @@ public class AsteroidCollision : MonoBehaviour
     {
         // Create a death effect at the player's position
         GameObject death = Instantiate(deathEffect, transform.position, transform.rotation);
-
+        source.Play();
         // Destroy the death effect after its animation finishes
         Destroy(death, 1f); // Adjust time if the animation length is different
 

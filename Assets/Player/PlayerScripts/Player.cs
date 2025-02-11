@@ -20,7 +20,8 @@ public class Player : MonoBehaviour
     public TMP_Text Score;
     private int deathCount; 
     public bool isDead;
-    
+    public AudioSource source;
+    public AudioClip clip;
     public AsteroidCollision asteroidCollision;
 
 
@@ -37,13 +38,14 @@ public class Player : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currenthealth -= damage;
-        Debug.Log("ishit");
             healthBar.SetHealth(currenthealth);
-        Debug.Log(currenthealth);
         if (currenthealth <= 0 && isDead == false)
         {
+            source.Play();
             if (SceneManager.GetActiveScene().buildIndex == 10)
             {
+     
+                source.Play();
                 GameObject death = Instantiate(deathEffect, transform.position, transform.rotation);
                 Destroy(death, 1f);
                 deathCount += 1;

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2881442550552587796}
   - component: {fileID: 2881442550552587797}
   - component: {fileID: 2881442550552587880}
+  - component: {fileID: 632670228333755527}
   m_Layer: 0
   m_Name: UI Manager
   m_TagString: Untagged
@@ -92,7 +93,6 @@ MonoBehaviour:
   c3: 0
   bossunlock: 0
   mission: {fileID: 0}
-  canvas: {fileID: 2881442551248055827}
 --- !u!114 &2881442550552587880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105,6 +105,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ac6dbdb5acd22348b50bc07986e22bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &632670228333755527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2881442550552587798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a155d481a4787e742bbb0c540585658b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scene: {fileID: 2881442550552587883}
+  PlayerID: 0
+  canvas: {fileID: 2881442551248055827}
+  text: {fileID: 5651632023434947033, guid: 2a13ffa6cefb9b140909f436bb6a35a2, type: 3}
 --- !u!1 &2881442551248055827
 GameObject:
   m_ObjectHideFlags: 0

@@ -15,7 +15,6 @@ public class Missions : MonoBehaviour
     public bool c3 = false;
     public bool bossunlock= false;
     public FinishLine mission;
-    public GameObject canvas;
     private void Awake()
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
@@ -44,14 +43,6 @@ public class Missions : MonoBehaviour
             {
                 SceneManager.LoadScene(8); // 8 ending
             }
-        }
-        if(sceneIndex==10 || sceneIndex==0 || sceneIndex==1 || sceneIndex==8 || sceneIndex==9)
-        {
-            canvas.SetActive(false);
-        }
-        else
-        {
-            canvas.SetActive(true); 
         }
     }
 

@@ -10,6 +10,8 @@ public class MovementPlayer1 : MonoBehaviour
     private Vector2 movement;
     public Transform firePoint;
     public GameObject bulletPrefab;
+    public AudioSource source;
+    public AudioClip clip;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -41,6 +43,7 @@ public class MovementPlayer1 : MonoBehaviour
     }
     void Shoot()
     {
+        source.Play();
         Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
     }
 
