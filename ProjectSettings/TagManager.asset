@@ -21,6 +21,7 @@ TagManager:
   - Finish1
   - Finish2
   - FinishLine
+  - Event
   layers:
   - Default
   - TransparentFX
