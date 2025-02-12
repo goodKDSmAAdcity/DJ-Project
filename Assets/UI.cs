@@ -33,20 +33,19 @@ public class UI : MonoBehaviour
     private void HandleSceneChange(int sceneIndex)
     {
 
-
+        text.enabled = sceneIndex == 1;
         if (sceneIndex == 1)
         {
-            text=FindObjectOfType<TextMeshProUGUI>();
             PlayerID = Random.Range(1, 999);
             int aux = PlayerID;
-            
             text.text = $"Will Pilot {aux} become a new hero?";
             PlayerID= aux;
             Debug.Log(PlayerID);
         }
 
-        bool HideCanvas = sceneIndex == 10 || sceneIndex == 0 || sceneIndex == 1 || sceneIndex == 8 || sceneIndex == 9;
-        canvas.SetActive(!HideCanvas);
+        bool HideScore = sceneIndex == 10 || sceneIndex == 0 || sceneIndex == 1 || sceneIndex == 8 || sceneIndex == 9;
+        canvas.SetActive(!HideScore);
+        
     }
     private void OnDestroy()
     {

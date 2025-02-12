@@ -10,6 +10,7 @@ public class SceneCheck : MonoBehaviour
     public bool raceScene=false;
     public bool lobbyScene=false;
     public bool multiplayer = false;
+    
     public GameObject Player;
     void Update()
     {

@@ -1012,7 +1012,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8097242031011262071, guid: 740551d32e7e06540b96bba648c47496, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8097242031011262071, guid: 740551d32e7e06540b96bba648c47496, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1202,6 +1202,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 650665104}
   m_CullTransparentMesh: 1
+--- !u!1 &730061303 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2881442551307238910, guid: 016739121443bdc4f81f46f4b0412191, type: 3}
+  m_PrefabInstance: {fileID: 1712474003}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &786219343
 GameObject:
   m_ObjectHideFlags: 0
@@ -2735,6 +2740,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 632670228333755527, guid: 016739121443bdc4f81f46f4b0412191, type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 730061303}
     - target: {fileID: 2881442550552587797, guid: 016739121443bdc4f81f46f4b0412191, type: 3}
       propertyPath: mission
       value: 
@@ -2745,7 +2754,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2881442550552587881, guid: 016739121443bdc4f81f46f4b0412191, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2881442550552587881, guid: 016739121443bdc4f81f46f4b0412191, type: 3}
       propertyPath: m_LocalPosition.x

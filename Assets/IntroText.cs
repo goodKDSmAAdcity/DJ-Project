@@ -7,6 +7,7 @@ public class IntroText : MonoBehaviour
 {
     public TextMeshProUGUI text;
     public Player player;
+
     void Start()
     {
         StartCoroutine(RunOneFrameAfterStart());
