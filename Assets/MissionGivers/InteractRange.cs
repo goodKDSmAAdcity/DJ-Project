@@ -6,11 +6,14 @@ public class InteractRange : MonoBehaviour
 {
     public GameObject player;
     private float distance;
-    public TextMeshProUGUI interactText;
+    public GameObject interactText;
+    public bool canInteract;
     void Update()
     {
         distance = Vector2.Distance(gameObject.transform.position, player.transform.position);
-            interactText.enabled = distance<8f;
+        interactText.SetActive(distance < 8f);
+        canInteract= distance<8f;
+
 
 
 

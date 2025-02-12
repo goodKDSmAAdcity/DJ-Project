@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Missions : MonoBehaviour
 {
-    public SceneCheck scene;
+    public SceneCheck scenec;
     private int sceneIndex;
     public bool r1 = false;
     public bool r2 = false;
@@ -21,7 +21,7 @@ public class Missions : MonoBehaviour
     }
     void Update()
     {
-        sceneIndex= scene.sceneIndex;
+        sceneIndex= scenec.sceneIndex;
         if (mission.MissionComplete)
         {
             if (sceneIndex == 1)
@@ -49,7 +49,7 @@ public class Missions : MonoBehaviour
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         Debug.Log("Scene Loaded: " + scene.name);
-        Find();
+            Find();
     }
 
     private void Find()

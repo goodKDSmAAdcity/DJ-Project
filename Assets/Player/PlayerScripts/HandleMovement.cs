@@ -13,6 +13,7 @@ public class HandleMovement : MonoBehaviour
     public PauseMenu1 pauseMenu;
     public AsteroidCollision death;
     public GameObject Player;
+    public bool isPausedByMenu;
     void Start()
     {
         if (sceneCheck.multiplayer == false)
@@ -68,8 +69,7 @@ public class HandleMovement : MonoBehaviour
     }
     void Update()
     {
-       
-        if ( pauseMenu.GameIsPaused == true || death.isDead==true)
+        if ( (pauseMenu.GameIsPaused == true || isPausedByMenu==true) || death.isDead==true)
         {
             toggleFollow.enabled = false ;
             toggleWeapon.enabled = false;

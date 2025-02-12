@@ -573,7 +573,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_TargetDisplay: 0
 --- !u!114 &322148268853925890
 MonoBehaviour:
@@ -882,6 +882,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mixer: {fileID: 24100000, guid: 07e7c8ccbca4b79498d9973bf6f1e552, type: 2}
+  source: {fileID: 0}
 --- !u!222 &322148269211802381
 CanvasRenderer:
   m_ObjectHideFlags: 0
