@@ -283,7 +283,7 @@ GameObject:
   - component: {fileID: 322148268853925901}
   - component: {fileID: 7473052925409474538}
   m_Layer: 5
-  m_Name: CombatMenu
+  m_Name: RaceMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -388,9 +388,9 @@ MonoBehaviour:
   ir: {fileID: 0}
   pm: {fileID: 0}
   hm: {fileID: 0}
-  mission1: 3
-  mission2: 5
-  mission3: 13
+  mission1: 2
+  mission2: 4
+  mission3: 12
   missions: {fileID: 2881442550552587797, guid: 016739121443bdc4f81f46f4b0412191, type: 3}
   sc: {fileID: 2881442550552587883, guid: 016739121443bdc4f81f46f4b0412191, type: 3}
 --- !u!1 &322148269633456846
@@ -756,7 +756,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btnIsCancelled: 0
-  btnIndex: 5
+  btnIndex: 2
   btnText: {fileID: 6757680793488834050}
   btn: {fileID: 7177409421034758649}
   mission: {fileID: 2881442550552587797, guid: 016739121443bdc4f81f46f4b0412191, type: 3}
@@ -908,7 +908,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btnIsCancelled: 0
-  btnIndex: 4
+  btnIndex: 1
   btnText: {fileID: 7427557397060032527}
   btn: {fileID: 1402087175931910684}
   mission: {fileID: 2881442550552587797, guid: 016739121443bdc4f81f46f4b0412191, type: 3}
@@ -1330,7 +1330,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btnIsCancelled: 0
-  btnIndex: 3
+  btnIndex: 0
   btnText: {fileID: 7130859448964267093}
   btn: {fileID: 4156971794563202755}
   mission: {fileID: 2881442550552587797, guid: 016739121443bdc4f81f46f4b0412191, type: 3}

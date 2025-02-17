@@ -848,6 +848,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d13ae3dda512ad408737620331275a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1652840807 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2881442550552587797, guid: 016739121443bdc4f81f46f4b0412191, type: 3}
+  m_PrefabInstance: {fileID: 1337112888}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7a9d6418707d20489dc19419aff12e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1689819363
 GameObject:
   m_ObjectHideFlags: 0
@@ -1353,6 +1364,8 @@ MonoBehaviour:
   cnt: {fileID: 12520641}
   nextScene: 4
   score: {fileID: 1652840803}
+  mission: {fileID: 1652840807}
+  sc: {fileID: 1652840804}
 --- !u!4 &2014495794
 Transform:
   m_ObjectHideFlags: 0

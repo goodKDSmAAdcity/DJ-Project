@@ -24,6 +24,10 @@ public class monsterSpawner : MonoBehaviour
     private int currentMonsterCount = 0; // Current number of spawned monsters
     private float timer = 0f; // Timer to track spawn intervals
 
+    void Start()
+    {
+
+    }
     void Update()
     {
         cnt.text = "Kills: " + Kills.ToString() + " /" + NOfEnemies.ToString(); 
