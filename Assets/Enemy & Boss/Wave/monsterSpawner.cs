@@ -26,7 +26,7 @@ public class monsterSpawner : MonoBehaviour
 
     void Start()
     {
-
+        StartCoroutine(FindObjects());    
     }
     void Update()
     {
@@ -84,4 +84,11 @@ public class monsterSpawner : MonoBehaviour
         newMonster.GetComponent<Enemy>().OnDestroyed += () => { currentMonsterCount--; Kills++; score.score+=(int)(100*Random.RandomRange(0.6f,1.4f)); };
     }
 
+    IEnumerator FindObjects()
+    {
+        yield return new WaitForSeconds(1f);
+        score= FindObjectOfType<HandleScore>();
+        mission = FindObjectOfType<Missions>();
+        sc=FindObjectOfType<SceneCheck>();
+    }
 }

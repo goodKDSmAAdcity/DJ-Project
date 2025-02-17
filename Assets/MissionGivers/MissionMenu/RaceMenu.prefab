@@ -731,9 +731,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 322148268853925903}
-        m_TargetAssemblyTypeName: PauseMenu1, Assembly-CSharp
-        m_MethodName: 
+      - m_Target: {fileID: 7473052925409474538}
+        m_TargetAssemblyTypeName: MissionMenu, Assembly-CSharp
+        m_MethodName: Mission3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -883,9 +883,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 322148268853925903}
-        m_TargetAssemblyTypeName: PauseMenu1, Assembly-CSharp
-        m_MethodName: 
+      - m_Target: {fileID: 7473052925409474538}
+        m_TargetAssemblyTypeName: MissionMenu, Assembly-CSharp
+        m_MethodName: Mission2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
