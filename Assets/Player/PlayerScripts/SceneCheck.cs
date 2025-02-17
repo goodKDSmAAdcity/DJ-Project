@@ -15,14 +15,14 @@ public class SceneCheck : MonoBehaviour
     void Update()
     {
     sceneIndex= SceneManager.GetActiveScene().buildIndex;
-        if (sceneIndex == 2 || sceneIndex == 4 || sceneIndex == 7)
+        if (sceneIndex == 2 || sceneIndex == 4 || sceneIndex == 7 || sceneIndex==12)
         {
             raceScene = true;
             lobbyScene = false;
             combatScene = false;
             multiplayer= false;
         }
-        if (sceneIndex == 3 || sceneIndex == 5 || sceneIndex == 6)
+        if (sceneIndex == 3 || sceneIndex == 5 || sceneIndex == 6 || sceneIndex==13)
         {
             combatScene = true;
             lobbyScene= false;

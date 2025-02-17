@@ -41,4 +41,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Lobby.unity
     guid: 5767bb1fd56652f4e8ecbdd95b3dc681
+  - enabled: 1
+    path: Assets/Scenes/Race3.unity
+    guid: 4f8cff20739ef1b4bb38af4a609a7b81
+  - enabled: 1
+    path: Assets/Scenes/CombatLvl3.unity
+    guid: efbf46c9e22d9bc4d8fde0ea9719acd1
   m_configObjects: {}

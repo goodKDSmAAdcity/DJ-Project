@@ -3611,6 +3611,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 322148268853925891, guid: 5b03ecb04b2182f4cabcbcda1e121188, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 322148268853925903, guid: 5b03ecb04b2182f4cabcbcda1e121188, type: 3}
       propertyPath: m_Name
       value: CombatMenu
@@ -3618,6 +3622,30 @@ PrefabInstance:
     - target: {fileID: 322148269633456846, guid: 5b03ecb04b2182f4cabcbcda1e121188, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1402087175931910684, guid: 5b03ecb04b2182f4cabcbcda1e121188, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 218835456}
+    - target: {fileID: 1402087175931910684, guid: 5b03ecb04b2182f4cabcbcda1e121188, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Mission2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1402087175931910684, guid: 5b03ecb04b2182f4cabcbcda1e121188, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MissionMenu, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7177409421034758649, guid: 5b03ecb04b2182f4cabcbcda1e121188, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 218835456}
+    - target: {fileID: 7177409421034758649, guid: 5b03ecb04b2182f4cabcbcda1e121188, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Mission3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7177409421034758649, guid: 5b03ecb04b2182f4cabcbcda1e121188, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MissionMenu, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7473052925409474538, guid: 5b03ecb04b2182f4cabcbcda1e121188, type: 3}
       propertyPath: hm
@@ -3631,8 +3659,31 @@ PrefabInstance:
       propertyPath: pm
       value: 
       objectReference: {fileID: 191548373}
+    - target: {fileID: 7473052925409474538, guid: 5b03ecb04b2182f4cabcbcda1e121188, type: 3}
+      propertyPath: mission1
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473052925409474538, guid: 5b03ecb04b2182f4cabcbcda1e121188, type: 3}
+      propertyPath: mission2
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7473052925409474538, guid: 5b03ecb04b2182f4cabcbcda1e121188, type: 3}
+      propertyPath: mission3
+      value: 13
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b03ecb04b2182f4cabcbcda1e121188, type: 3}
+--- !u!114 &218835456 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7473052925409474538, guid: 5b03ecb04b2182f4cabcbcda1e121188, type: 3}
+  m_PrefabInstance: {fileID: 218835455}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3ee58dd13970784db23c21d78f92932, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &220254831 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6284933979439046064, guid: 7e73d8cc1e09492498f76df02fb52fbf, type: 3}
@@ -7220,7 +7271,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 429001744}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 492}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

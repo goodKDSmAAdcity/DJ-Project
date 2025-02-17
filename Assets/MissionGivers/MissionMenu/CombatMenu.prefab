@@ -388,6 +388,11 @@ MonoBehaviour:
   ir: {fileID: 0}
   pm: {fileID: 0}
   hm: {fileID: 0}
+  mission1: 0
+  mission2: 0
+  mission3: 0
+  missions: {fileID: 0}
+  sc: {fileID: 0}
 --- !u!1 &322148269633456846
 GameObject:
   m_ObjectHideFlags: 0

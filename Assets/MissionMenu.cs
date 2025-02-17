@@ -10,6 +10,11 @@ public class MissionMenu : MonoBehaviour
     public InteractRange ir;
     public PauseMenu1 pm;
     public HandleMovement hm;
+    public int mission1;
+    public int mission2;
+    public int mission3;
+    public Missions missions;
+    public SceneCheck sc;
     private void Start()
     {
         GameIsPaused = false;
@@ -49,7 +54,18 @@ public class MissionMenu : MonoBehaviour
     public void Mission1()
     {
         GameIsPaused = false;
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(mission1);
+    }
+
+    public void Mission2()
+    {
+        GameIsPaused= false;
+        SceneManager.LoadScene(mission2);
+    }
+    public void Mission3()
+    {
+        GameIsPaused = false;
+        SceneManager.LoadScene(mission3);
     }
 
     public void Options()

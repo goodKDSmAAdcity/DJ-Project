@@ -7,12 +7,9 @@ public class Missions : MonoBehaviour
 {
     public SceneCheck scenec;
     private int sceneIndex;
-    public bool r1 = false;
-    public bool r2 = false;
-    public bool r3 = false;
-    public bool c1 = false;
-    public bool c2 = false;
-    public bool c3 = false;
+    private int i = 3;
+    public bool[] r = new bool[] { false, false, false };
+    public bool[] c= new bool[] {false,false,false};
     public bool bossunlock= false;
     public FinishLine mission;
     private void Awake()
@@ -24,19 +21,19 @@ public class Missions : MonoBehaviour
         sceneIndex= scenec.sceneIndex;
         if (mission.MissionComplete)
         {
-            if (sceneIndex == 1)
-            {
-                r1 = true;
-                SceneManager.LoadScene(11); // 11 lobby
-            }
             if (sceneIndex == 2)
             {
-                r2 = true;
+                r[0] = true;
+                SceneManager.LoadScene(11); // 11 lobby
+            }
+            if (sceneIndex == 4)
+            {
+                r[1] = true;
                 SceneManager.LoadScene(11);
             }
-            if (sceneIndex == 3)
+            if (sceneIndex == 12)
             {
-                r3 = true;
+                r[2] = true;
                 SceneManager.LoadScene(11);
             }
             if (sceneIndex == 7)

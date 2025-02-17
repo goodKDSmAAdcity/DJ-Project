@@ -33,7 +33,7 @@ TagManager:
   - Border
   - KillBoss
   - Finish
-  - 
+  - Background
   - 
   - 
   - 
@@ -60,9 +60,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 2296394001
+    locked: 0
   - name: Asteroids
     uniqueID: 2208016677
     locked: 0
   - name: ScreenBorders
     uniqueID: 1273850537
+    locked: 0
+  - name: UI
+    uniqueID: 759486603
     locked: 0

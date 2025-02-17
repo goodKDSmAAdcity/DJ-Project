@@ -991,6 +991,39 @@ Transform:
   m_Father: {fileID: 1858447809}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &945282500 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2881442550552587797, guid: 016739121443bdc4f81f46f4b0412191, type: 3}
+  m_PrefabInstance: {fileID: 2051405082}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7a9d6418707d20489dc19419aff12e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &945282501 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2881442550552587796, guid: 016739121443bdc4f81f46f4b0412191, type: 3}
+  m_PrefabInstance: {fileID: 2051405082}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cd9c70c780a44042a7c70a9357bd2ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &945282502 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2881442550552587883, guid: 016739121443bdc4f81f46f4b0412191, type: 3}
+  m_PrefabInstance: {fileID: 2051405082}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d13ae3dda512ad408737620331275a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1221764086
 GameObject:
   m_ObjectHideFlags: 0
@@ -1460,11 +1493,13 @@ MonoBehaviour:
   maxMonsters: 5
   spawnXPosition: 3
   time: 0
-  NOfEnemies: 30
+  NOfEnemies: 40
   Kills: 0
   cnt: {fileID: 83701305}
   nextScene: 6
-  score: {fileID: 0}
+  score: {fileID: 945282501}
+  mission: {fileID: 945282500}
+  sc: {fileID: 945282502}
 --- !u!4 &2014495794
 Transform:
   m_ObjectHideFlags: 0

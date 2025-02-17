@@ -19,7 +19,8 @@ public class monsterSpawner : MonoBehaviour
     private float TotalSpawned = 0;
     public int nextScene;
     public HandleScore score;
-
+    public Missions mission;
+    public SceneCheck sc;
     private int currentMonsterCount = 0; // Current number of spawned monsters
     private float timer = 0f; // Timer to track spawn intervals
 
@@ -44,8 +45,19 @@ public class monsterSpawner : MonoBehaviour
         }
         if(Kills >= NOfEnemies)
         {
-
-            SceneManager.LoadScene(nextScene);
+            if(sc.sceneIndex==3) 
+            {
+                mission.c[0] = true;
+            }
+            if(sc.sceneIndex==5) 
+            {
+                mission.c[1] = true;
+            }
+            if (sc.sceneIndex == 13)
+            {
+                mission.c[2] = true;
+            }
+            SceneManager.LoadScene(11);
         }
 
         // Update the timer
