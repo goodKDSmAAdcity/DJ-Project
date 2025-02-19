@@ -10,11 +10,12 @@ public class Aim : MonoBehaviour
     private GameObject player;
     public AudioSource source;
     public AudioClip clip;
+    public float interval = 2;
     void Update()
     {
         player = GameObject.FindGameObjectWithTag("Player");
         timer += Time.deltaTime;
-        if(timer > 2)
+        if(timer > interval)
         {
             timer = 0;
             Shoot();

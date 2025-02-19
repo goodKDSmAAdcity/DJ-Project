@@ -264,7 +264,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxhealth: 100
-  currenthealth: 0
+  currenthealth: 125
   deathEffect: {fileID: 5135223436016443139, guid: 6927368689b1a7945b92e448f1987e0b, type: 3}
   healthBar: {fileID: 0}
   sceneIndex: 0
@@ -286,7 +286,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 24300002, guid: 07e7c8ccbca4b79498d9973bf6f1e552, type: 2}
   m_audioClip: {fileID: 8300000, guid: 4310474905e266640852f43bd609a1a4, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.092
+  m_Volume: 0.314
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -506,6 +506,7 @@ MonoBehaviour:
   pauseMenu: {fileID: 0}
   death: {fileID: 2617884501145111449}
   Player: {fileID: 2617884501145111451}
+  isPausedByMenu: 0
 --- !u!114 &2617884501145111446
 MonoBehaviour:
   m_ObjectHideFlags: 0

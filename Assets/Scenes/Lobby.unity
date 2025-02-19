@@ -24252,6 +24252,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e73d8cc1e09492498f76df02fb52fbf, type: 3}
+--- !u!114 &1541153103 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7473052925409474538, guid: 5b03ecb04b2182f4cabcbcda1e121188, type: 3}
+  m_PrefabInstance: {fileID: 1997279749}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3ee58dd13970784db23c21d78f92932, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1554809393 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6284933979439046064, guid: 7e73d8cc1e09492498f76df02fb52fbf, type: 3}
@@ -30483,6 +30494,30 @@ PrefabInstance:
     - target: {fileID: 322148268853925903, guid: 5b03ecb04b2182f4cabcbcda1e121188, type: 3}
       propertyPath: m_Name
       value: CombatMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 1402087175931910684, guid: 5b03ecb04b2182f4cabcbcda1e121188, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1541153103}
+    - target: {fileID: 1402087175931910684, guid: 5b03ecb04b2182f4cabcbcda1e121188, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Mission2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1402087175931910684, guid: 5b03ecb04b2182f4cabcbcda1e121188, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MissionMenu, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7177409421034758649, guid: 5b03ecb04b2182f4cabcbcda1e121188, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1541153103}
+    - target: {fileID: 7177409421034758649, guid: 5b03ecb04b2182f4cabcbcda1e121188, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Mission3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7177409421034758649, guid: 5b03ecb04b2182f4cabcbcda1e121188, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MissionMenu, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7473052925409474538, guid: 5b03ecb04b2182f4cabcbcda1e121188, type: 3}
       propertyPath: hm
