@@ -21,7 +21,7 @@ public class HandleScore : MonoBehaviour
     void Update()
     {
         sc.text= "Score: " + score.ToString();
-        if(scene.raceScene==true) 
+        if(scene.raceScene==true && scene.sceneIndex!=7) 
         {
             timer += Time.deltaTime;
             if(timer >=interval)

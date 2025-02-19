@@ -43,7 +43,7 @@ public class UI : MonoBehaviour
             Debug.Log(PlayerID);
         }
 
-        bool HideScore = sceneIndex == 10 || sceneIndex == 0 || sceneIndex == 1 || sceneIndex == 8 || sceneIndex == 9;
+        bool HideScore = sceneIndex == 10 || sceneIndex == 0 || sceneIndex == 1 || sceneIndex == 8 || sceneIndex == 9 || sceneIndex==6 || sceneIndex==7;
         canvas.SetActive(!HideScore);
         
     }

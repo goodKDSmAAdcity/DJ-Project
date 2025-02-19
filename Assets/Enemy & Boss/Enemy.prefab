@@ -131,6 +131,7 @@ MonoBehaviour:
   bulletPos: {fileID: 5035545269962961433}
   source: {fileID: -6175443904607274372}
   clip: {fileID: 8300000, guid: 4310474905e266640852f43bd609a1a4, type: 3}
+  interval: 2
 --- !u!114 &-7616082345527044707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -146,6 +147,9 @@ MonoBehaviour:
   maxhealth: 100
   currenthealth: 0
   deathEffect: {fileID: 5135223436016443139, guid: 6927368689b1a7945b92e448f1987e0b, type: 3}
+  givenChance: 11
+  chance: 0
+  HealthPickup: {fileID: 1944601155338898044, guid: 40ecf63655ee8154aa1a42ed91cd40d7, type: 3}
 --- !u!82 &-6175443904607274372
 AudioSource:
   m_ObjectHideFlags: 0

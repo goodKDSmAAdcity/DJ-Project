@@ -12,40 +12,45 @@ public class SceneCheck : MonoBehaviour
     public bool multiplayer = false;
     
     public GameObject Player;
+    private void Start()
+    {
+        sceneIndex = SceneManager.GetActiveScene().buildIndex;
+        if (sceneIndex == 7)
+        {
+            Player.transform.position = new Vector3(0f, 0f, 0f);
+        }
+    }
     void Update()
     {
-    sceneIndex= SceneManager.GetActiveScene().buildIndex;
-        if (sceneIndex == 2 || sceneIndex == 4 || sceneIndex == 7 || sceneIndex==12)
+        sceneIndex = SceneManager.GetActiveScene().buildIndex;
+        if (sceneIndex == 2 || sceneIndex == 4 || sceneIndex == 7 || sceneIndex == 12)
         {
             raceScene = true;
             lobbyScene = false;
             combatScene = false;
-            multiplayer= false;
+            multiplayer = false;
         }
-        if (sceneIndex == 3 || sceneIndex == 5 || sceneIndex == 6 || sceneIndex==13)
+        if (sceneIndex == 3 || sceneIndex == 5 || sceneIndex == 6 || sceneIndex == 13)
         {
             combatScene = true;
-            lobbyScene= false;
+            lobbyScene = false;
             raceScene = false;
-            multiplayer= false;
+            multiplayer = false;
         }
         if (sceneIndex == 11)
         {
             lobbyScene = true;
-            raceScene= false;
-            combatScene= false;
-            multiplayer= false;
+            raceScene = false;
+            combatScene = false;
+            multiplayer = false;
         }
-        if(sceneIndex == 10) {
-            multiplayer= true;
-            raceScene= false;
-            combatScene= false;
-            lobbyScene= false;
-
-}
-        if (sceneIndex == 7)
+        if (sceneIndex == 10)
         {
-            Player.transform.position =new Vector3(0f,transform.position.y,transform.position.z);
+            multiplayer = true;
+            raceScene = false;
+            combatScene = false;
+            lobbyScene = false;
+
         }
     }
 }

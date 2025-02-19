@@ -11,32 +11,49 @@ public class HandleButton : MonoBehaviour
     public TextMeshProUGUI btnText;
     public Button btn;
     public Missions mission;
+    public bool isBossMenu;
+    public bool missionUnlocked = false;
     void Start()
     {
         mission = FindAnyObjectByType<Missions>();
-        if(btnIndex<3)
+        if (isBossMenu==false)
         {
-            if (mission.r[btnIndex])
-                btnIsCancelled= true;
-        }
-        else
-        {
-            if (mission.c[btnIndex-3])
+            if (btnIndex < 3)
             {
-                btnIsCancelled= true;
+                if (mission.r[btnIndex])
+                    btnIsCancelled = true;
             }
+            else
+            {
+                if (mission.c[btnIndex - 3])
+                {
+                    btnIsCancelled = true;
+                }
 
+            }
+            if (btnIsCancelled)
+            {
+                CancelBtn();
+            }
         }
-        if (btnIsCancelled)
+        if(isBossMenu==true)
         {
-            CancelBtn();
+            if (mission.c[0] && mission.c[1] && mission.c[2] && mission.r[0] && mission.r[1] && mission.r[2])
+            {
+                missionUnlocked= true;
+            }
+            if (missionUnlocked == false)
+            {
+                btnText.text = "COMPLETE ALL MISSIONS TO UNLOCK THE FINAL MISSION";
+                btn.interactable = false;
+            }
         }
     }
     void CancelBtn()
     {
         if (btnIsCancelled)
         {
-            btnText.text = "Mission Complete";
+            btnText.text = "MISSION COMPLETE";
             btn.interactable= false;
         }
     }

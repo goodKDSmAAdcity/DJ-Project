@@ -9,7 +9,8 @@ public class Enemy : MonoBehaviour
     public int currenthealth;
     public GameObject deathEffect;
     public event Action OnDestroyed;
-    private int chance;
+    public int givenChance;
+    public int chance;
     public GameObject HealthPickup;
     private void Start()
     {
@@ -29,7 +30,7 @@ public class Enemy : MonoBehaviour
     }
     void Die()
     {
-        if (chance>=9)
+        if (chance>=givenChance)
         {
             Instantiate(HealthPickup, transform.position, new Quaternion(0,0,0,0));
         }
