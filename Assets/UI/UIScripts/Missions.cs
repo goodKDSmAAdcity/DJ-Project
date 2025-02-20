@@ -12,6 +12,7 @@ public class Missions : MonoBehaviour
     public bool[] c= new bool[] {false,false,false};
     public bool bossunlock= false;
     public FinishLine mission;
+    public bool isPurchased = false;
     private void Awake()
     {
         SceneManager.sceneLoaded += OnSceneLoaded;

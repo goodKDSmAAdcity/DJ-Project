@@ -13,6 +13,7 @@ public class HandleButton : MonoBehaviour
     public Missions mission;
     public bool isBossMenu;
     public bool missionUnlocked = false;
+    public bool isShopMenu;
     void Start()
     {
         mission = FindAnyObjectByType<Missions>();
@@ -49,12 +50,20 @@ public class HandleButton : MonoBehaviour
             }
         }
     }
+    private void Update()
+    {
+        if (isShopMenu == true)
+        {
+            if (mission.isPurchased == true)
+            {
+                btnText.text = "ITEM PURCHASED";
+                btn.interactable = false;
+            }
+        }
+    }
     void CancelBtn()
     {
-        if (btnIsCancelled)
-        {
             btnText.text = "MISSION COMPLETE";
             btn.interactable= false;
-        }
     }
 }

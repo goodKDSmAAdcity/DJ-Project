@@ -15,8 +15,12 @@ public class MissionMenu : MonoBehaviour
     public int mission3;
     public Missions missions;
     public SceneCheck sc;
+    public HandleScore hs;
+    public HandleButton hb;
+    public bool isBossMenu = false;
     private void Start()
     {
+        StartCoroutine(Find());
         GameIsPaused = false;
         Time.timeScale = 1.0f;
     }
@@ -68,8 +72,22 @@ public class MissionMenu : MonoBehaviour
         SceneManager.LoadScene(mission3);
     }
 
-    public void Options()
+    public void Shop()
     {
-
+        if(missions.isPurchased == false)
+        {
+            if (hs.score >= 5000)
+            {
+                GameIsPaused= false;
+                hs.score -= 5000;
+                missions.isPurchased= true;
+            }
+        }
+    }
+    IEnumerator Find()
+    {
+        yield return new WaitForSeconds(1f);
+        missions = FindObjectOfType<Missions>();
+        hs = FindObjectOfType<HandleScore>();
     }
 }

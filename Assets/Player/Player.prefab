@@ -251,6 +251,8 @@ MonoBehaviour:
   bulletPrefab: {fileID: 230663703676377898, guid: 80882acbae2ddc9469d1d3c88fcb1635, type: 3}
   source: {fileID: 2617884501145111443}
   clip: {fileID: 8300000, guid: 4310474905e266640852f43bd609a1a4, type: 3}
+  misslePrefab: {fileID: 1472546661689042374, guid: 617620fe5444b554cbdddb8f205fb954, type: 3}
+  fireRate: 0.1
 --- !u!114 &2617884501145111442
 MonoBehaviour:
   m_ObjectHideFlags: 0
